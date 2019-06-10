@@ -1,0 +1,8 @@
+Diesel PBRT
+
+Extends the PBRT API Framework By Restructuring the Static Pipeline Approach to PBRT rendering process to make the process configurable and usable in external environments
+
+We also have Paralllezation/SIMD/GPU Raster Graphics and Taskflows in Mind
+
+PBRT is an excellent system for scene generation / Scene Descriptions are clean concise and configurable. We prefer to use this as 
+our go to Graphics API.
