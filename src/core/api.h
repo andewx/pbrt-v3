@@ -90,6 +90,10 @@ void pbrtWorldEnd();
 
 void pbrtParseFile(std::string filename);
 void pbrtParseString(std::string str);
+    
+    
+void pbrtRenderOptions(ParamSet &rOptions);
+    
 
 }  // namespace pbrt
 

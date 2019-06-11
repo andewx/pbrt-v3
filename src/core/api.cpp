@@ -182,6 +182,7 @@ struct RenderOptions {
     std::map<std::string, std::vector<std::shared_ptr<Primitive>>> instances;
     std::vector<std::shared_ptr<Primitive>> *currentInstance = nullptr;
     bool haveScatteringMedia = false;
+    bool userConfiguration = false;
 };
 
 // MaterialInstance represents both an instance of a material as well as
@@ -1729,5 +1730,25 @@ Camera *RenderOptions::MakeCamera() const {
                                   renderOptions->transformEndTime, film);
     return camera;
 }
+    
+    
+    void pbrtRenderOptions(ParamSet &rOptions){
+        bool userOptions = rOptions.FindOneBool("override", true);
+        renderOptions->userConfiguration = userOptions; 
+        if(userOptions){
+            renderOptions->SamplerName = rOptions.FindOneString("Sampler", "");
+            renderOptions->IntegratorName = rOptions.FindOneString("Integrator", "");
+            renderOptions->FilterName = rOptions.FindOneString("Filter", "");
+            renderOptions->FilmName = rOptions.FindOneString("Film", "");
+            renderOptions->CameraName = rOptions.FindOneString("Camera", "");
+            
+            renderOptions->SamplerParams = rOptions;
+            renderOptions->IntegratorParams = rOptions;
+            renderOptions->CameraParams = rOptions;
+            renderOptions->FilterParams = rOptions;
+            renderOptions->FilmParams = rOptions;
+            
+        }
+    }
 
 }  // namespace pbrt

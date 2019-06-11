@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf/ImfRgbaYca.cpp \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf/ImfRgbaYca.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf/ImfRgba.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/half.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/halfExport.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf/ImfNamespace.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config/OpenEXRConfig.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf/ImfChromaticities.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathVec.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathExc.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathNamespace.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config/IlmBaseConfig.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexBaseExc.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexNamespace.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexExport.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathExport.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathLimits.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathMath.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathPlatform.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathMatrix.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathFun.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathInt64.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathShear.h \
+  /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf/ImfExport.h
