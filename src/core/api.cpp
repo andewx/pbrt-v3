@@ -182,6 +182,7 @@ struct RenderOptions {
     std::map<std::string, std::vector<std::shared_ptr<Primitive>>> instances;
     std::vector<std::shared_ptr<Primitive>> *currentInstance = nullptr;
     bool haveScatteringMedia = false;
+    bool userOptions = false;
 };
 
 // MaterialInstance represents both an instance of a material as well as
@@ -425,6 +426,12 @@ std::vector<std::shared_ptr<Shape>> MakeShapes(const std::string &name,
                 "and using the start transform only",                \
                 func);                                               \
     } while (false) /* swallow trailing semicolon */
+    
+#define VERIFY_CONFIG(func)                   \
+    if(renderOptions->userOptions){           \
+        Warning( "Render Configuration Set to User Mode", func);\
+        return;                               \
+    }                                         \/* swallow training semicolon */
 
 // Object Creation Function Definitions
 std::vector<std::shared_ptr<Shape>> MakeShapes(const std::string &name,
@@ -1024,8 +1031,10 @@ void pbrtTransformTimes(Float start, Float end) {
 
 void pbrtPixelFilter(const std::string &name, const ParamSet &params) {
     VERIFY_OPTIONS("PixelFilter");
-    renderOptions->FilterName = name;
-    renderOptions->FilterParams = params;
+     if(!renderOptions->userOptions){
+         renderOptions->FilterName = name;
+         renderOptions->FilterParams = params;
+     }
     if (PbrtOptions.cat || PbrtOptions.toPly) {
         printf("%*sPixelFilter \"%s\" ", catIndentCount, "", name.c_str());
         params.Print(catIndentCount);
@@ -1035,8 +1044,10 @@ void pbrtPixelFilter(const std::string &name, const ParamSet &params) {
 
 void pbrtFilm(const std::string &type, const ParamSet &params) {
     VERIFY_OPTIONS("Film");
-    renderOptions->FilmParams = params;
-    renderOptions->FilmName = type;
+     if(!renderOptions->userOptions){
+         renderOptions->FilmParams = params;
+         renderOptions->FilmName = type;
+     }
     if (PbrtOptions.cat || PbrtOptions.toPly) {
         printf("%*sFilm \"%s\" ", catIndentCount, "", type.c_str());
         params.Print(catIndentCount);
@@ -1046,8 +1057,10 @@ void pbrtFilm(const std::string &type, const ParamSet &params) {
 
 void pbrtSampler(const std::string &name, const ParamSet &params) {
     VERIFY_OPTIONS("Sampler");
-    renderOptions->SamplerName = name;
-    renderOptions->SamplerParams = params;
+    if(!renderOptions->userOptions){
+        renderOptions->SamplerName = name;
+        renderOptions->SamplerParams = params;
+    }
     if (PbrtOptions.cat || PbrtOptions.toPly) {
         printf("%*sSampler \"%s\" ", catIndentCount, "", name.c_str());
         params.Print(catIndentCount);
@@ -1068,8 +1081,10 @@ void pbrtAccelerator(const std::string &name, const ParamSet &params) {
 
 void pbrtIntegrator(const std::string &name, const ParamSet &params) {
     VERIFY_OPTIONS("Integrator");
-    renderOptions->IntegratorName = name;
-    renderOptions->IntegratorParams = params;
+     if(!renderOptions->userOptions){
+        renderOptions->IntegratorName = name;
+         renderOptions->IntegratorParams = params;
+     }
     if (PbrtOptions.cat || PbrtOptions.toPly) {
         printf("%*sIntegrator \"%s\" ", catIndentCount, "", name.c_str());
         params.Print(catIndentCount);
@@ -1079,8 +1094,10 @@ void pbrtIntegrator(const std::string &name, const ParamSet &params) {
 
 void pbrtCamera(const std::string &name, const ParamSet &params) {
     VERIFY_OPTIONS("Camera");
-    renderOptions->CameraName = name;
-    renderOptions->CameraParams = params;
+     if(!renderOptions->userOptions){
+         renderOptions->CameraName = name;
+         renderOptions->CameraParams = params;
+     }
     renderOptions->CameraToWorld = Inverse(curTransform);
     namedCoordinateSystems["camera"] = renderOptions->CameraToWorld;
     if (PbrtOptions.cat || PbrtOptions.toPly) {
@@ -1728,6 +1745,27 @@ Camera *RenderOptions::MakeCamera() const {
                                   renderOptions->transformStartTime,
                                   renderOptions->transformEndTime, film);
     return camera;
+}
+  
+    
+//Set All Render Options from a config State
+void pbrtRenderConfig(ParamSet &renderSet){
+    renderOptions->userOptions = renderSet.FindOneBool("override", false);
+    if(renderOptions->userOptions){
+        
+        renderOptions->SamplerName = renderSet.FindOneString("Sampler","");
+        renderOptions->IntegratorName = renderSet.FindOneString("Integrator","");
+        renderOptions->FilterName = renderSet.FindOneString("Filter","");
+        renderOptions->FilmName = renderSet.FindOneString("Film","");
+        renderOptions->CameraName = renderSet.FindOneString("Camera","");
+        
+        renderOptions->SamplerParams = renderSet;
+        renderOptions->IntegratorParams = renderSet;
+        renderOptions->FilterParams = renderSet;
+        renderOptions->FilmParams = renderSet;
+        renderOptions->CameraParams = renderSet;
+        
+    }
 }
 
 }  // namespace pbrt
