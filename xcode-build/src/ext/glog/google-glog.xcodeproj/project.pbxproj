@@ -1,0 +1,2510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 43F5908A36674C8D89E5A533 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				53DA91B184B94A39905B90BE /* CMake Rules */,
+			);
+			dependencies = (
+				5FF68B2458254D21B8B5890A /* PBXTargetDependency */,
+				87539DCA5EBC4417A5113AC6 /* PBXTargetDependency */,
+				220A1A3659F3492D8F8199CE /* PBXTargetDependency */,
+				8BD74F7FA3394C6AA0A07923 /* PBXTargetDependency */,
+				469822D7787448A9AE24C39B /* PBXTargetDependency */,
+				DACE85CD9F664B3CB3FBF445 /* PBXTargetDependency */,
+				3DD3DF40A0714BBEBDE5F1C4 /* PBXTargetDependency */,
+				E110ED5165FE4B99A6A3ED8C /* PBXTargetDependency */,
+				317101A4522C413F92B2A475 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		12B1631189F74CB5B2B1490D /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 44F9B5C5A3984583AAFB872E /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				950D75672D0847ECA8BBE3F4 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C01EEB6BD2774E619FF6AB0D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				D6ADD2BA57F747229C257436 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		EC9FA500EADA481D8FA12693 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E9F16229260B4B2FB599CECD /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				A65FEBE1CEA740428E7BA800 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				B6928264D2C5405BABEEF3D5 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		F50A10DE91864524B27D9105 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 82F9B14171BE434282F9A31A /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				90F21188FAA9419EB2212DC4 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				001584AA22CF47A1BDBF9E50 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		124AF05DE4884713AC95000F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 969BE2FF46AC4CE592001B70 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */; };
+		1F91B0695F0D4E169837ED83 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/logging_unittest.cc */ = {isa = PBXBuildFile; fileRef = A166E39AC5AD4D428ED2A0B9 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/logging_unittest.cc */; };
+		211163F1545043AEB6E51EDB /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/raw_logging.cc */ = {isa = PBXBuildFile; fileRef = 648D0B760CB64930A976937D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/raw_logging.cc */; };
+		27861A7953F3419EA33BE452 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/stacktrace_unittest.cc */ = {isa = PBXBuildFile; fileRef = DF698D8FDD714C8E8115EF1D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/stacktrace_unittest.cc */; };
+		2A3C047CA29C43F1A56E6411 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities_unittest.cc */ = {isa = PBXBuildFile; fileRef = 89551220E0744113B0F808BA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities_unittest.cc */; };
+		37E18BA8BDD2448EB72C896C /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/config.h */ = {isa = PBXBuildFile; fileRef = 312498040AF544D89E1F15EB /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/config.h */; };
+		3819ADA5C0BE4E8C8D6F121B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/commandlineflags.h */ = {isa = PBXBuildFile; fileRef = 59177B1A57964BBFA93BA896 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/commandlineflags.h */; };
+		386194312F1A415681A8DD30 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/signalhandler.cc */ = {isa = PBXBuildFile; fileRef = 91602956232D4C4680C754E9 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/signalhandler.cc */; };
+		45ABB45A024548F59239D01D /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/logging.h */ = {isa = PBXBuildFile; fileRef = 46C2A006B58B4D84AA144E58 /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/logging.h */; };
+		514E02DE12B34DF8A584EF12 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/vlog_is_on.cc */ = {isa = PBXBuildFile; fileRef = E20EFD3874C24829969299EC /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/vlog_is_on.cc */; };
+		5398C3EC88944B61BB11AFA3 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = BF7B3647D44D4314B679F5A4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */; };
+		65735843AAE64CB1AC5CE789 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities.h */ = {isa = PBXBuildFile; fileRef = 2C757108FA70476AA82EA210 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities.h */; };
+		673C6A51A654409E9DD49258 /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/raw_logging.h */ = {isa = PBXBuildFile; fileRef = 6A75B451B7E849F4BF3B999C /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/raw_logging.h */; };
+		76B6F7E70BC4471BADEF4C68 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/googleinit.h */ = {isa = PBXBuildFile; fileRef = 117B3B29492949A9B2A9696D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/googleinit.h */; };
+		7C38CA2F35E749F7BE3B4F8B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/stl_logging_unittest.cc */ = {isa = PBXBuildFile; fileRef = 7C872F83C5FC4DBDBB86AA4E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/stl_logging_unittest.cc */; };
+		8045BC7D33CA46C2A96A8EEA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize_unittest.cc */ = {isa = PBXBuildFile; fileRef = 0BA770EC6246470D92A9F6CD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize_unittest.cc */; };
+		84622F4EE29F4190B3F9799C /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/glog/log_severity.h */ = {isa = PBXBuildFile; fileRef = BF5AD1BD2D574F47B41895A7 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/glog/log_severity.h */; };
+		8C792D9876A54134944A4020 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize.cc */ = {isa = PBXBuildFile; fileRef = C03B67F846EB4E63A8A138A4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize.cc */; };
+		92C92F24DABC466EAE711197 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/signalhandler_unittest.cc */ = {isa = PBXBuildFile; fileRef = 52D3DDB403984B01BE834183 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/signalhandler_unittest.cc */; };
+		9AA45B55607D40D9ADF6B7BB /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle.cc */ = {isa = PBXBuildFile; fileRef = F39A2D1DCDA44C2D8ED2BE76 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle.cc */; };
+		A0142C76882C4C17B2418C2D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle.h */ = {isa = PBXBuildFile; fileRef = 95022614F5A14224A5C4E003 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle.h */; };
+		AAF9E09A33CF4264843F92F2 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 479C6DA4845A470FA3609C3D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */; };
+		AD533CF4D85A43449F389085 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6845D0E462C949DD83DEC89A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */; };
+		B0C89BB36E3A43D9907B583F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize.h */ = {isa = PBXBuildFile; fileRef = 46E5586065914D6D8D3B9DE1 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize.h */; };
+		B7CD678D97784048975D0B41 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle_unittest.cc */ = {isa = PBXBuildFile; fileRef = 00D83826806F45C8967811A4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle_unittest.cc */; };
+		B850E153CFDE4CA9ADBE876C /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/mutex.h */ = {isa = PBXBuildFile; fileRef = C9A52EA9A53749CC8DF3AD50 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/mutex.h */; };
+		BC83EDD7E71B45F4B538EDAE /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/stl_logging.h */ = {isa = PBXBuildFile; fileRef = E54F763F3BC3464EB4556D90 /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/stl_logging.h */; };
+		D629DD694C3E4F7889866A41 /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/vlog_is_on.h */ = {isa = PBXBuildFile; fileRef = 15AA6719EF404E32ACA3BD4B /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/vlog_is_on.h */; };
+		E40E0ECBE992475A8150AA27 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8DAC8C1B432146358769342F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */; };
+		E8DDB4D4F63047EFA822E20A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = FC88D6BCD5064D62BBBD45D3 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */; };
+		E99C27DBA1AD4FA69B30B3E2 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities.cc */ = {isa = PBXBuildFile; fileRef = 59F9BDB7534349FBBE03C851 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities.cc */; };
+		EEA9D576BCDE468AAC3B0247 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = ECAC23C4F97F4743A1772452 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */; };
+		F0A96298E5F84F36B3B94C3C /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7B0BFD94045843F585B9A996 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */; };
+		FF8C1CAA3DA843E6AD531DC8 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/logging.cc */ = {isa = PBXBuildFile; fileRef = ADB96B08C22045048272D733 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/logging.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		24DE86C932274A7E9741A73A /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		613994FAE8164A22BD32C104 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		8AB22D2F79D04D32B3C2572C /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		FE9602E3783F45B7B219A94D /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0FBA69D0E20B43BA9CFB6008 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739117627A0547E4B9C7F502;
+			remoteInfo = glog;
+		};
+		15AC3A3E55914F5BA3FD3998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		1E3074F8638945B8A672EBE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		2475BF857FA046768E5AE585 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		2475EFC11DFB495084FE4E7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		4E9442C29FE5411B8AECC7EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739117627A0547E4B9C7F502;
+			remoteInfo = glog;
+		};
+		5D6991663984488DA8DF751F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739117627A0547E4B9C7F502;
+			remoteInfo = glog;
+		};
+		5E82B18F390A4BC898106EBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D33BBE7C7F44280A953D23D;
+			remoteInfo = demangle_unittest;
+		};
+		60ECF82A48BC4FF29BCF1425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739117627A0547E4B9C7F502;
+			remoteInfo = glog;
+		};
+		633AF67247EA45ABA7307AE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		68D9578044D34F1EBB355C1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739117627A0547E4B9C7F502;
+			remoteInfo = glog;
+		};
+		80D63314CBDF4F10B40553F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739117627A0547E4B9C7F502;
+			remoteInfo = glog;
+		};
+		843F9D20BFAE47079A9F6EFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739117627A0547E4B9C7F502;
+			remoteInfo = glog;
+		};
+		846BD72EBD69458B8C111AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739117627A0547E4B9C7F502;
+			remoteInfo = glog;
+		};
+		8B012DB3404347C8A253C79F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10E6A6B5BC764F47B3CC2808;
+			remoteInfo = ALL_BUILD;
+		};
+		8D2E12A623CD4EAABD0001E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80FA006865C04DAB92671818;
+			remoteInfo = signalhandler_unittest;
+		};
+		94EDF7E36F4B4C5DACC60610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10E6A6B5BC764F47B3CC2808;
+			remoteInfo = ALL_BUILD;
+		};
+		98ECD917DA1B4FA2B03E272C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		A191FCF9BAAC4D21ABAE55C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		A24C79AE633E44279FD600C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F7F9FCED0F04F9792054008;
+			remoteInfo = stacktrace_unittest;
+		};
+		A53416FD47A54DACBE538C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E565BB8E6D4CD5BEBA8B1F;
+			remoteInfo = symbolize_unittest;
+		};
+		B0115AC20F324C8A899D73EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADCCAEB20D1F4E7BBA2D02CE;
+			remoteInfo = utilities_unittest;
+		};
+		B6C5A24B91B644D7B2F2ECEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D51ABC21A663460CBE493765;
+			remoteInfo = stl_logging_unittest;
+		};
+		BA5A9EF92CD64D0BAFBE18D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCD41B9C96DD48B4878B0DE2;
+			remoteInfo = logging_unittest;
+		};
+		BF3969DC16554625A4F600A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		E416DDC7BF8C4746877D66B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F579209F99444EA2BB6433BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D83826806F45C8967811A4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = demangle_unittest.cc; path = src/demangle_unittest.cc; sourceTree = SOURCE_ROOT; };
+		0BA770EC6246470D92A9F6CD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = symbolize_unittest.cc; path = src/symbolize_unittest.cc; sourceTree = SOURCE_ROOT; };
+		117B3B29492949A9B2A9696D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/googleinit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = googleinit.h; path = src/base/googleinit.h; sourceTree = SOURCE_ROOT; };
+		125D2F87163C444A8F757E9A /* signalhandler_unittest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = signalhandler_unittest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15AA6719EF404E32ACA3BD4B /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/vlog_is_on.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vlog_is_on.h; path = "../../../xcode-build/src/ext/glog/glog/vlog_is_on.h"; sourceTree = SOURCE_ROOT; };
+		235E76E211BE408BAC82C7A4 /* stacktrace_unittest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = stacktrace_unittest; sourceTree = BUILT_PRODUCTS_DIR; };
+		248B7D7D0A1142C4B65BA85E /* demangle_unittest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = demangle_unittest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C757108FA70476AA82EA210 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = utilities.h; path = src/utilities.h; sourceTree = SOURCE_ROOT; };
+		312498040AF544D89E1F15EB /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = config.h; path = "../../../xcode-build/src/ext/glog/config.h"; sourceTree = SOURCE_ROOT; };
+		46C2A006B58B4D84AA144E58 /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/logging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = logging.h; path = "../../../xcode-build/src/ext/glog/glog/logging.h"; sourceTree = SOURCE_ROOT; };
+		46E5586065914D6D8D3B9DE1 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = symbolize.h; path = src/symbolize.h; sourceTree = SOURCE_ROOT; };
+		479C6DA4845A470FA3609C3D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		52D3DDB403984B01BE834183 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/signalhandler_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = signalhandler_unittest.cc; path = src/signalhandler_unittest.cc; sourceTree = SOURCE_ROOT; };
+		59177B1A57964BBFA93BA896 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/commandlineflags.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = commandlineflags.h; path = src/base/commandlineflags.h; sourceTree = SOURCE_ROOT; };
+		59F9BDB7534349FBBE03C851 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = utilities.cc; path = src/utilities.cc; sourceTree = SOURCE_ROOT; };
+		648D0B760CB64930A976937D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/raw_logging.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = raw_logging.cc; path = src/raw_logging.cc; sourceTree = SOURCE_ROOT; };
+		6845D0E462C949DD83DEC89A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6A75B451B7E849F4BF3B999C /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/raw_logging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = raw_logging.h; path = "../../../xcode-build/src/ext/glog/glog/raw_logging.h"; sourceTree = SOURCE_ROOT; };
+		7B0BFD94045843F585B9A996 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7C371637EEBF44E892D63F83 /* utilities_unittest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = utilities_unittest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C872F83C5FC4DBDBB86AA4E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/stl_logging_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stl_logging_unittest.cc; path = src/stl_logging_unittest.cc; sourceTree = SOURCE_ROOT; };
+		89551220E0744113B0F808BA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = utilities_unittest.cc; path = src/utilities_unittest.cc; sourceTree = SOURCE_ROOT; };
+		8AEABCA5A355422D9835E0CF /* stl_logging_unittest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = stl_logging_unittest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DAC8C1B432146358769342F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		91602956232D4C4680C754E9 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/signalhandler.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = signalhandler.cc; path = src/signalhandler.cc; sourceTree = SOURCE_ROOT; };
+		95022614F5A14224A5C4E003 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = demangle.h; path = src/demangle.h; sourceTree = SOURCE_ROOT; };
+		969BE2FF46AC4CE592001B70 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		96A35A7F246B428A955975B1 /* symbolize_unittest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = symbolize_unittest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A605FC0CD94A6697899848 /* logging_unittest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = logging_unittest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A166E39AC5AD4D428ED2A0B9 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/logging_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logging_unittest.cc; path = src/logging_unittest.cc; sourceTree = SOURCE_ROOT; };
+		ADB96B08C22045048272D733 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/logging.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logging.cc; path = src/logging.cc; sourceTree = SOURCE_ROOT; };
+		BDD7BDDA6C994356B1D21435 /* glog */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5AD1BD2D574F47B41895A7 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/glog/log_severity.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = log_severity.h; path = src/glog/log_severity.h; sourceTree = SOURCE_ROOT; };
+		BF7B3647D44D4314B679F5A4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C03B67F846EB4E63A8A138A4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = symbolize.cc; path = src/symbolize.cc; sourceTree = SOURCE_ROOT; };
+		C425C91632424F3BBC0D751D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C9A52EA9A53749CC8DF3AD50 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/mutex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mutex.h; path = src/base/mutex.h; sourceTree = SOURCE_ROOT; };
+		DF698D8FDD714C8E8115EF1D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/stacktrace_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stacktrace_unittest.cc; path = src/stacktrace_unittest.cc; sourceTree = SOURCE_ROOT; };
+		E20EFD3874C24829969299EC /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/vlog_is_on.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vlog_is_on.cc; path = src/vlog_is_on.cc; sourceTree = SOURCE_ROOT; };
+		E54F763F3BC3464EB4556D90 /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/stl_logging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stl_logging.h; path = "../../../xcode-build/src/ext/glog/glog/stl_logging.h"; sourceTree = SOURCE_ROOT; };
+		ECAC23C4F97F4743A1772452 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F39A2D1DCDA44C2D8ED2BE76 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = demangle.cc; path = src/demangle.cc; sourceTree = SOURCE_ROOT; };
+		FC88D6BCD5064D62BBBD45D3 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		087BE4DB7BE54E27B2645B68 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C872F83C5FC4DBDBB86AA4E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/stl_logging_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		0AE38323DFA64F19BCA89FD2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F39A2D1DCDA44C2D8ED2BE76 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle.cc */,
+				ADB96B08C22045048272D733 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/logging.cc */,
+				648D0B760CB64930A976937D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/raw_logging.cc */,
+				91602956232D4C4680C754E9 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/signalhandler.cc */,
+				C03B67F846EB4E63A8A138A4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize.cc */,
+				59F9BDB7534349FBBE03C851 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities.cc */,
+				E20EFD3874C24829969299EC /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/vlog_is_on.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		0FA95A595A50454C90B09DC8 /* signalhandler_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				42EF85D876614D09B183450C /* Source Files */,
+				6845D0E462C949DD83DEC89A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */,
+			);
+			name = signalhandler_unittest;
+			sourceTree = "<group>";
+		};
+		15ECCBDA36CC4F398D76C1ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				248B7D7D0A1142C4B65BA85E /* demangle_unittest */,
+				BDD7BDDA6C994356B1D21435 /* glog */,
+				97A605FC0CD94A6697899848 /* logging_unittest */,
+				125D2F87163C444A8F757E9A /* signalhandler_unittest */,
+				235E76E211BE408BAC82C7A4 /* stacktrace_unittest */,
+				8AEABCA5A355422D9835E0CF /* stl_logging_unittest */,
+				96A35A7F246B428A955975B1 /* symbolize_unittest */,
+				7C371637EEBF44E892D63F83 /* utilities_unittest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		199FA2D5E28244759ABE08F9 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				FAAC9FBD993A490EA8DAFF4C /* CMake Rules */,
+				C425C91632424F3BBC0D751D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		1AD538767B234EF99DA5DCE0 /* symbolize_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				91B1D0CE8C7547BCB4C12890 /* Source Files */,
+				479C6DA4845A470FA3609C3D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */,
+			);
+			name = symbolize_unittest;
+			sourceTree = "<group>";
+		};
+		3159686EFD614516BE20D2E0 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A166E39AC5AD4D428ED2A0B9 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/logging_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3C22791747A247C584AB4469 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF698D8FDD714C8E8115EF1D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/stacktrace_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		42EF85D876614D09B183450C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				52D3DDB403984B01BE834183 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/signalhandler_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		43ED61A1C39C43D19DBA6793 /* logging_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				3159686EFD614516BE20D2E0 /* Source Files */,
+				FC88D6BCD5064D62BBBD45D3 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */,
+			);
+			name = logging_unittest;
+			sourceTree = "<group>";
+		};
+		517912600E8D460D9D094E8C /* utilities_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				6147D2EB900849A0AA821E30 /* Source Files */,
+				7B0BFD94045843F585B9A996 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */,
+			);
+			name = utilities_unittest;
+			sourceTree = "<group>";
+		};
+		6147D2EB900849A0AA821E30 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				89551220E0744113B0F808BA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		73103DDBE19E4BA7B43233DF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				00D83826806F45C8967811A4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		90C9D3F5EFD5405FAA0A6FD6 /* stacktrace_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				3C22791747A247C584AB4469 /* Source Files */,
+				BF7B3647D44D4314B679F5A4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */,
+			);
+			name = stacktrace_unittest;
+			sourceTree = "<group>";
+		};
+		91B1D0CE8C7547BCB4C12890 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BA770EC6246470D92A9F6CD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9286EE84742748F18ECB9B04 /* demangle_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				73103DDBE19E4BA7B43233DF /* Source Files */,
+				969BE2FF46AC4CE592001B70 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */,
+			);
+			name = demangle_unittest;
+			sourceTree = "<group>";
+		};
+		AB6C84ADBF304CAB898BB426 /* glog */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF15A07B754831B6AF2A58 /* Header Files */,
+				0AE38323DFA64F19BCA89FD2 /* Source Files */,
+				ECAC23C4F97F4743A1772452 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */,
+			);
+			name = glog;
+			sourceTree = "<group>";
+		};
+		BFCDC3F2A9C3417E8951DA4C /* stl_logging_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				087BE4DB7BE54E27B2645B68 /* Source Files */,
+				8DAC8C1B432146358769342F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/CMakeLists.txt */,
+			);
+			name = stl_logging_unittest;
+			sourceTree = "<group>";
+		};
+		CFBF15A07B754831B6AF2A58 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				59177B1A57964BBFA93BA896 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/commandlineflags.h */,
+				117B3B29492949A9B2A9696D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/googleinit.h */,
+				C9A52EA9A53749CC8DF3AD50 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/base/mutex.h */,
+				95022614F5A14224A5C4E003 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle.h */,
+				BF5AD1BD2D574F47B41895A7 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/glog/log_severity.h */,
+				46E5586065914D6D8D3B9DE1 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize.h */,
+				2C757108FA70476AA82EA210 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities.h */,
+				312498040AF544D89E1F15EB /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/config.h */,
+				46C2A006B58B4D84AA144E58 /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/logging.h */,
+				6A75B451B7E849F4BF3B999C /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/raw_logging.h */,
+				E54F763F3BC3464EB4556D90 /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/stl_logging.h */,
+				15AA6719EF404E32ACA3BD4B /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/glog/vlog_is_on.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		D995001F1EC94147AD905C0C /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				517912600E8D460D9D094E8C /* utilities_unittest */,
+				AB6C84ADBF304CAB898BB426 /* glog */,
+				43ED61A1C39C43D19DBA6793 /* logging_unittest */,
+				BFCDC3F2A9C3417E8951DA4C /* stl_logging_unittest */,
+				9286EE84742748F18ECB9B04 /* demangle_unittest */,
+			);
+			name = ext;
+			sourceTree = "<group>";
+		};
+		FAAC9FBD993A490EA8DAFF4C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		FF84F42F970844EA8E6E4B58 = {
+			isa = PBXGroup;
+			children = (
+				D995001F1EC94147AD905C0C /* ext */,
+				0FA95A595A50454C90B09DC8 /* signalhandler_unittest */,
+				90C9D3F5EFD5405FAA0A6FD6 /* stacktrace_unittest */,
+				1AD538767B234EF99DA5DCE0 /* symbolize_unittest */,
+				199FA2D5E28244759ABE08F9 /* ALL_BUILD */,
+				15ECCBDA36CC4F398D76C1ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D33BBE7C7F44280A953D23D /* demangle_unittest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 619EA9478743467084A9BB83 /* Build configuration list for PBXNativeTarget "demangle_unittest" */;
+			buildPhases = (
+				72CDA5A8158944C99605D0E2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0A7B4ABCDB84256A502F630 /* PBXTargetDependency */,
+				390E3910527743AEAFCDE977 /* PBXTargetDependency */,
+			);
+			name = demangle_unittest;
+			productName = demangle_unittest;
+			productReference = 248B7D7D0A1142C4B65BA85E /* demangle_unittest */;
+			productType = "com.apple.product-type.tool";
+		};
+		739117627A0547E4B9C7F502 /* glog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 101963D82AEA49F6BDE199B8 /* Build configuration list for PBXNativeTarget "glog" */;
+			buildPhases = (
+				B8AA499BB2404EBCA1F43C77 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E2CF641FB7645B185E8DAB9 /* PBXTargetDependency */,
+			);
+			name = glog;
+			productName = glog;
+			productReference = BDD7BDDA6C994356B1D21435 /* glog */;
+			productType = "com.apple.product-type.library.static";
+		};
+		80FA006865C04DAB92671818 /* signalhandler_unittest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBCA3C26F5834BD09BEF73B1 /* Build configuration list for PBXNativeTarget "signalhandler_unittest" */;
+			buildPhases = (
+				47D1BF7A44464780B1BA77A7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FEA4036DF0243718D37BEA6 /* PBXTargetDependency */,
+				FA99BCE686874A46AA1C21C2 /* PBXTargetDependency */,
+			);
+			name = signalhandler_unittest;
+			productName = signalhandler_unittest;
+			productReference = 125D2F87163C444A8F757E9A /* signalhandler_unittest */;
+			productType = "com.apple.product-type.tool";
+		};
+		9F7F9FCED0F04F9792054008 /* stacktrace_unittest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACAEA852BD4B406ABEF9D5EF /* Build configuration list for PBXNativeTarget "stacktrace_unittest" */;
+			buildPhases = (
+				248B5600360A47C39415B74B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				987447296BE74260BE994CD5 /* PBXTargetDependency */,
+				34DE882A4B194FD09AB831D1 /* PBXTargetDependency */,
+			);
+			name = stacktrace_unittest;
+			productName = stacktrace_unittest;
+			productReference = 235E76E211BE408BAC82C7A4 /* stacktrace_unittest */;
+			productType = "com.apple.product-type.tool";
+		};
+		ADCCAEB20D1F4E7BBA2D02CE /* utilities_unittest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6EB3BE3E18548F191472EDD /* Build configuration list for PBXNativeTarget "utilities_unittest" */;
+			buildPhases = (
+				0686D0C81F10471EA85A5660 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F51516B60FE41A8ABE24C4B /* PBXTargetDependency */,
+				3687B05EB5CB452A8FD4DA77 /* PBXTargetDependency */,
+			);
+			name = utilities_unittest;
+			productName = utilities_unittest;
+			productReference = 7C371637EEBF44E892D63F83 /* utilities_unittest */;
+			productType = "com.apple.product-type.tool";
+		};
+		D51ABC21A663460CBE493765 /* stl_logging_unittest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 981520142C7D414CA3F43EB3 /* Build configuration list for PBXNativeTarget "stl_logging_unittest" */;
+			buildPhases = (
+				F93EA6046E81411CAEFD1E81 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B1BB36EAA544645B0EA4FB3 /* PBXTargetDependency */,
+				48D2BF00B583485C95F0A4B1 /* PBXTargetDependency */,
+			);
+			name = stl_logging_unittest;
+			productName = stl_logging_unittest;
+			productReference = 8AEABCA5A355422D9835E0CF /* stl_logging_unittest */;
+			productType = "com.apple.product-type.tool";
+		};
+		D7E565BB8E6D4CD5BEBA8B1F /* symbolize_unittest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44AB03E43AAD4BC4B9B4AFDE /* Build configuration list for PBXNativeTarget "symbolize_unittest" */;
+			buildPhases = (
+				E47C6AD788E34335BA6DCA3A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E58BEA742CF94A5FA049EB04 /* PBXTargetDependency */,
+				429BDE59B382460E8BB0CE14 /* PBXTargetDependency */,
+			);
+			name = symbolize_unittest;
+			productName = symbolize_unittest;
+			productReference = 96A35A7F246B428A955975B1 /* symbolize_unittest */;
+			productType = "com.apple.product-type.tool";
+		};
+		FCD41B9C96DD48B4878B0DE2 /* logging_unittest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BAF83FDB3F0477893960AAE /* Build configuration list for PBXNativeTarget "logging_unittest" */;
+			buildPhases = (
+				B412588F92F44534B8992897 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22E405D478B24815A7177C94 /* PBXTargetDependency */,
+				C152CFD9BCCD4F0E906593DF /* PBXTargetDependency */,
+			);
+			name = logging_unittest;
+			productName = logging_unittest;
+			productReference = 97A605FC0CD94A6697899848 /* logging_unittest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F579209F99444EA2BB6433BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4B3C0D71D3434540B3051818 /* Build configuration list for PBXProject "google-glog" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				FE9602E3783F45B7B219A94D /* Debug */,
+				24DE86C932274A7E9741A73A /* Release */,
+				613994FAE8164A22BD32C104 /* MinSizeRel */,
+				8AB22D2F79D04D32B3C2572C /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = FF84F42F970844EA8E6E4B58;
+			projectDirPath = ../../../../src/ext/glog;
+			projectRoot = "";
+			targets = (
+				10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */,
+				12B1631189F74CB5B2B1490D /* RUN_TESTS */,
+				3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */,
+				5D33BBE7C7F44280A953D23D /* demangle_unittest */,
+				739117627A0547E4B9C7F502 /* glog */,
+				F50A10DE91864524B27D9105 /* install */,
+				FCD41B9C96DD48B4878B0DE2 /* logging_unittest */,
+				EC9FA500EADA481D8FA12693 /* package */,
+				80FA006865C04DAB92671818 /* signalhandler_unittest */,
+				9F7F9FCED0F04F9792054008 /* stacktrace_unittest */,
+				D51ABC21A663460CBE493765 /* stl_logging_unittest */,
+				D7E565BB8E6D4CD5BEBA8B1F /* symbolize_unittest */,
+				ADCCAEB20D1F4E7BBA2D02CE /* utilities_unittest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B73AE098833492DA9D32F9F = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4BB657819E9B43BFBF1A9D44 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4C30DA35994A44C49FB7E08C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		53DA91B184B94A39905B90BE /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		7A04DE134AFB4ED680EACAB5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		90F21188FAA9419EB2212DC4 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		93837079CB0F4AD5AD7840A7 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		950D75672D0847ECA8BBE3F4 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A65FEBE1CEA740428E7BA800 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		D6ADD2BA57F747229C257436 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0686D0C81F10471EA85A5660 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3C047CA29C43F1A56E6411 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities_unittest.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248B5600360A47C39415B74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27861A7953F3419EA33BE452 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/stacktrace_unittest.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D1BF7A44464780B1BA77A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C92F24DABC466EAE711197 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/signalhandler_unittest.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72CDA5A8158944C99605D0E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7CD678D97784048975D0B41 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle_unittest.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B412588F92F44534B8992897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F91B0695F0D4E169837ED83 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/logging_unittest.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8AA499BB2404EBCA1F43C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA45B55607D40D9ADF6B7BB /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/demangle.cc */,
+				FF8C1CAA3DA843E6AD531DC8 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/logging.cc */,
+				211163F1545043AEB6E51EDB /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/raw_logging.cc */,
+				386194312F1A415681A8DD30 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/signalhandler.cc */,
+				8C792D9876A54134944A4020 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize.cc */,
+				E99C27DBA1AD4FA69B30B3E2 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/utilities.cc */,
+				514E02DE12B34DF8A584EF12 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/vlog_is_on.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47C6AD788E34335BA6DCA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8045BC7D33CA46C2A96A8EEA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/symbolize_unittest.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93EA6046E81411CAEFD1E81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C38CA2F35E749F7BE3B4F8B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src/stl_logging_unittest.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		001584AA22CF47A1BDBF9E50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */;
+			targetProxy = 8B012DB3404347C8A253C79F /* PBXContainerItemProxy */;
+		};
+		0F51516B60FE41A8ABE24C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = BF3969DC16554625A4F600A2 /* PBXContainerItemProxy */;
+		};
+		0FEA4036DF0243718D37BEA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = A191FCF9BAAC4D21ABAE55C4 /* PBXContainerItemProxy */;
+		};
+		220A1A3659F3492D8F8199CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80FA006865C04DAB92671818 /* signalhandler_unittest */;
+			targetProxy = 8D2E12A623CD4EAABD0001E5 /* PBXContainerItemProxy */;
+		};
+		22E405D478B24815A7177C94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 2475BF857FA046768E5AE585 /* PBXContainerItemProxy */;
+		};
+		317101A4522C413F92B2A475 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D33BBE7C7F44280A953D23D /* demangle_unittest */;
+			targetProxy = 5E82B18F390A4BC898106EBC /* PBXContainerItemProxy */;
+		};
+		34DE882A4B194FD09AB831D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739117627A0547E4B9C7F502 /* glog */;
+			targetProxy = 5D6991663984488DA8DF751F /* PBXContainerItemProxy */;
+		};
+		3687B05EB5CB452A8FD4DA77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739117627A0547E4B9C7F502 /* glog */;
+			targetProxy = 843F9D20BFAE47079A9F6EFC /* PBXContainerItemProxy */;
+		};
+		390E3910527743AEAFCDE977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739117627A0547E4B9C7F502 /* glog */;
+			targetProxy = 846BD72EBD69458B8C111AF2 /* PBXContainerItemProxy */;
+		};
+		3B1BB36EAA544645B0EA4FB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = E416DDC7BF8C4746877D66B1 /* PBXContainerItemProxy */;
+		};
+		3DD3DF40A0714BBEBDE5F1C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7E565BB8E6D4CD5BEBA8B1F /* symbolize_unittest */;
+			targetProxy = A53416FD47A54DACBE538C12 /* PBXContainerItemProxy */;
+		};
+		429BDE59B382460E8BB0CE14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739117627A0547E4B9C7F502 /* glog */;
+			targetProxy = 0FBA69D0E20B43BA9CFB6008 /* PBXContainerItemProxy */;
+		};
+		469822D7787448A9AE24C39B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739117627A0547E4B9C7F502 /* glog */;
+			targetProxy = 4E9442C29FE5411B8AECC7EF /* PBXContainerItemProxy */;
+		};
+		48D2BF00B583485C95F0A4B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739117627A0547E4B9C7F502 /* glog */;
+			targetProxy = 60ECF82A48BC4FF29BCF1425 /* PBXContainerItemProxy */;
+		};
+		5FF68B2458254D21B8B5890A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 98ECD917DA1B4FA2B03E272C /* PBXContainerItemProxy */;
+		};
+		87539DCA5EBC4417A5113AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADCCAEB20D1F4E7BBA2D02CE /* utilities_unittest */;
+			targetProxy = B0115AC20F324C8A899D73EF /* PBXContainerItemProxy */;
+		};
+		8BD74F7FA3394C6AA0A07923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F7F9FCED0F04F9792054008 /* stacktrace_unittest */;
+			targetProxy = A24C79AE633E44279FD600C8 /* PBXContainerItemProxy */;
+		};
+		987447296BE74260BE994CD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 15AC3A3E55914F5BA3FD3998 /* PBXContainerItemProxy */;
+		};
+		9E2CF641FB7645B185E8DAB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 633AF67247EA45ABA7307AE6 /* PBXContainerItemProxy */;
+		};
+		B6928264D2C5405BABEEF3D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */;
+			targetProxy = 94EDF7E36F4B4C5DACC60610 /* PBXContainerItemProxy */;
+		};
+		C0A7B4ABCDB84256A502F630 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 1E3074F8638945B8A672EBE1 /* PBXContainerItemProxy */;
+		};
+		C152CFD9BCCD4F0E906593DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739117627A0547E4B9C7F502 /* glog */;
+			targetProxy = 80D63314CBDF4F10B40553F9 /* PBXContainerItemProxy */;
+		};
+		DACE85CD9F664B3CB3FBF445 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCD41B9C96DD48B4878B0DE2 /* logging_unittest */;
+			targetProxy = BA5A9EF92CD64D0BAFBE18D0 /* PBXContainerItemProxy */;
+		};
+		E110ED5165FE4B99A6A3ED8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D51ABC21A663460CBE493765 /* stl_logging_unittest */;
+			targetProxy = B6C5A24B91B644D7B2F2ECEA /* PBXContainerItemProxy */;
+		};
+		E58BEA742CF94A5FA049EB04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 2475EFC11DFB495084FE4E7B /* PBXContainerItemProxy */;
+		};
+		FA99BCE686874A46AA1C21C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739117627A0547E4B9C7F502 /* glog */;
+			targetProxy = 68D9578044D34F1EBB355C1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B2FC66893354EF1A3CAFF3D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0B85CEA7E92F43FD88008A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register    -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Debug/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = symbolize_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1700B935DB07425A8109CEAB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		18EB485D155E40AFAAC86E44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/build";
+			};
+			name = Release;
+		};
+		1B40F739E5434C6CA3062078 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/MinSizeRel/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = logging_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1C326F6919E14688B7A63143 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glog;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2C9D2D4933574CD39C2BAFE1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/MinSizeRel/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stacktrace_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2ED81343F59E419CA8C74323 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/MinSizeRel/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = utilities_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		33250C78AF9B407DA4B1D95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register    -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Debug/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = signalhandler_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		337683E3056A47CDB9708F9A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLOG_STL_LOGGING_FOR_UNORDERED,GLOG_STL_LOGGING_FOR_EXT_HASH,"'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register        -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-deprecated -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/RelWithDebInfo/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stl_logging_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3617ED643BEC495DB4661DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLOG_STL_LOGGING_FOR_UNORDERED,GLOG_STL_LOGGING_FOR_EXT_HASH,"'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register    -fvisibility=default -fvisibility-inlines-hidden -Wno-deprecated -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Debug/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stl_logging_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		3C396B57B0544AB9B3E8DAA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		3DD0D396A4C148F7B7D7BA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Release/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = signalhandler_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		401F615ADA384CF39B99961C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		423A496CA8564C2BB7CDD353 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register        -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/RelWithDebInfo/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = symbolize_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		432BBE78A2A24A308D358B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		467A96793A4F41C598707CCE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register        -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/RelWithDebInfo/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = signalhandler_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4A2293ECA63D4D279962BBC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		54166FB60D6A48D5AAA0F9A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		54E12A2EFC3B4E288A09187B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Release/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stacktrace_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		583AD4267AE34093827E43A9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register        -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/RelWithDebInfo/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = logging_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5AFBFBF640BC4A1E99A97B17 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/MinSizeRel/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = demangle_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5B40DBC0980748FFB7D7BF41 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register        -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/RelWithDebInfo/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stacktrace_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5B82A6EEF074451D84BB42A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5C64A0942A454FF097195FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5D8805DF689B47B0822B634A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		68C631F23372444E9F527334 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/build";
+			};
+			name = MinSizeRel;
+		};
+		6B618B425E5F40CBA438A2D5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glog;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6CEFB19F9C974548A0C58CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6FE4553E8406434EA5B598B6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		73E9D95747AE40838E2E83D1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7E3F8CE35A3240A786F455D4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		814DAF706C264B6F914D12F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		85588B20017D4F18ACD1D342 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		95B6B7F3DBE04664A66EDA65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register    -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Debug/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = demangle_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		981EDDE130494551855D1422 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A1D1B4693419456CB293FA6E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/MinSizeRel/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = signalhandler_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A3D1E921D7704FABB204CE31 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register        -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glog;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A463DEF5B9B846E29E3103A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLOG_STL_LOGGING_FOR_UNORDERED,GLOG_STL_LOGGING_FOR_EXT_HASH,"'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-deprecated -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Release/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stl_logging_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		AFB7A80B54C4413285AC19EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Release/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = logging_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B483C12080214FE988694990 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B8653CB5BC8841B8B357318A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Release/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = symbolize_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B879401EF1F64C0D9F337F5E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLOG_STL_LOGGING_FOR_UNORDERED,GLOG_STL_LOGGING_FOR_EXT_HASH,"'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-deprecated -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/MinSizeRel/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stl_logging_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C03DFE64C0924C37B79D03D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register    -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Debug/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stacktrace_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C155BF7A67944C56B4C99085 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C36A9688F62444609C97461C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register        -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/RelWithDebInfo/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = demangle_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C38FD07359C1487B9893259D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Release/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = demangle_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		C93FB9AF8339438F837246F5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/MinSizeRel/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = symbolize_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D5EBFAC2FB764442B1C174E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register    -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Debug/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = logging_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		E68A9FD4DF8E477DA5B8C448 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E6F0A002087E4D0DB8562802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register    -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Debug/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = utilities_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F072953E0CB64037AE0C1F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register    -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glog;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F576126D228941CCB21C62C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register     -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/Release/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = utilities_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F8DD197C4BBC4E8A9B5FE87D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/build";
+			};
+			name = RelWithDebInfo;
+		};
+		F9A69FF6289041229491E559 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/build";
+			};
+			name = Debug;
+		};
+		FE3F248EF265453AA882281B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'GOOGLE_GLOG_DLL_DECL='");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register        -DNDEBUG -fvisibility=default -fvisibility-inlines-hidden -Wno-unnamed-type-template-args   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog/RelWithDebInfo/libglog.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = utilities_unittest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		101963D82AEA49F6BDE199B8 /* Build configuration list for PBXNativeTarget "glog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F072953E0CB64037AE0C1F97 /* Debug */,
+				1C326F6919E14688B7A63143 /* Release */,
+				6B618B425E5F40CBA438A2D5 /* MinSizeRel */,
+				A3D1E921D7704FABB204CE31 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		43F5908A36674C8D89E5A533 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEFB19F9C974548A0C58CBA /* Debug */,
+				814DAF706C264B6F914D12F7 /* Release */,
+				6FE4553E8406434EA5B598B6 /* MinSizeRel */,
+				C155BF7A67944C56B4C99085 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		44AB03E43AAD4BC4B9B4AFDE /* Build configuration list for PBXNativeTarget "symbolize_unittest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B85CEA7E92F43FD88008A6D /* Debug */,
+				B8653CB5BC8841B8B357318A /* Release */,
+				C93FB9AF8339438F837246F5 /* MinSizeRel */,
+				423A496CA8564C2BB7CDD353 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		44F9B5C5A3984583AAFB872E /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54166FB60D6A48D5AAA0F9A2 /* Debug */,
+				5B82A6EEF074451D84BB42A0 /* Release */,
+				981EDDE130494551855D1422 /* MinSizeRel */,
+				B483C12080214FE988694990 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4B3C0D71D3434540B3051818 /* Build configuration list for PBXProject "google-glog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A69FF6289041229491E559 /* Debug */,
+				18EB485D155E40AFAAC86E44 /* Release */,
+				68C631F23372444E9F527334 /* MinSizeRel */,
+				F8DD197C4BBC4E8A9B5FE87D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		619EA9478743467084A9BB83 /* Build configuration list for PBXNativeTarget "demangle_unittest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B6B7F3DBE04664A66EDA65 /* Debug */,
+				C38FD07359C1487B9893259D /* Release */,
+				5AFBFBF640BC4A1E99A97B17 /* MinSizeRel */,
+				C36A9688F62444609C97461C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		82F9B14171BE434282F9A31A /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A2293ECA63D4D279962BBC4 /* Debug */,
+				401F615ADA384CF39B99961C /* Release */,
+				73E9D95747AE40838E2E83D1 /* MinSizeRel */,
+				1700B935DB07425A8109CEAB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		981520142C7D414CA3F43EB3 /* Build configuration list for PBXNativeTarget "stl_logging_unittest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3617ED643BEC495DB4661DD1 /* Debug */,
+				A463DEF5B9B846E29E3103A6 /* Release */,
+				B879401EF1F64C0D9F337F5E /* MinSizeRel */,
+				337683E3056A47CDB9708F9A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9BAF83FDB3F0477893960AAE /* Build configuration list for PBXNativeTarget "logging_unittest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5EBFAC2FB764442B1C174E8 /* Debug */,
+				AFB7A80B54C4413285AC19EC /* Release */,
+				1B40F739E5434C6CA3062078 /* MinSizeRel */,
+				583AD4267AE34093827E43A9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A6EB3BE3E18548F191472EDD /* Build configuration list for PBXNativeTarget "utilities_unittest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6F0A002087E4D0DB8562802 /* Debug */,
+				F576126D228941CCB21C62C6 /* Release */,
+				2ED81343F59E419CA8C74323 /* MinSizeRel */,
+				FE3F248EF265453AA882281B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ACAEA852BD4B406ABEF9D5EF /* Build configuration list for PBXNativeTarget "stacktrace_unittest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C03DFE64C0924C37B79D03D1 /* Debug */,
+				54E12A2EFC3B4E288A09187B /* Release */,
+				2C9D2D4933574CD39C2BAFE1 /* MinSizeRel */,
+				5B40DBC0980748FFB7D7BF41 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C01EEB6BD2774E619FF6AB0D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C64A0942A454FF097195FC9 /* Debug */,
+				3C396B57B0544AB9B3E8DAA8 /* Release */,
+				5D8805DF689B47B0822B634A /* MinSizeRel */,
+				0B2FC66893354EF1A3CAFF3D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E9F16229260B4B2FB599CECD /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85588B20017D4F18ACD1D342 /* Debug */,
+				432BBE78A2A24A308D358B93 /* Release */,
+				E68A9FD4DF8E477DA5B8C448 /* MinSizeRel */,
+				7E3F8CE35A3240A786F455D4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FBCA3C26F5834BD09BEF73B1 /* Build configuration list for PBXNativeTarget "signalhandler_unittest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33250C78AF9B407DA4B1D95E /* Debug */,
+				3DD0D396A4C148F7B7D7BA37 /* Release */,
+				A1D1B4693419456CB293FA6E /* MinSizeRel */,
+				467A96793A4F41C598707CCE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F579209F99444EA2BB6433BC /* Project object */;
+}

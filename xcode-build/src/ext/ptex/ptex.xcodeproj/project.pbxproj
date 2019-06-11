@@ -1,0 +1,2730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 12C993A101A34E44A1D5E03B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				E5367F0A891C4840B5B2972F /* CMake Rules */,
+			);
+			dependencies = (
+				F4BCDD3321BF435895F46A7E /* PBXTargetDependency */,
+				B350A1758F6D4799B24D12D0 /* PBXTargetDependency */,
+				252220638B824A059D477416 /* PBXTargetDependency */,
+				996D0358610E4360B20B8E9A /* PBXTargetDependency */,
+				F943ABB399254EA494EE8D0F /* PBXTargetDependency */,
+				7D5C4F8E0B2B4A67A3999FD9 /* PBXTargetDependency */,
+				060DD65A91064B8C9EBA0663 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		12B1631189F74CB5B2B1490D /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7FDDCFD3614D402CBC64A7AD /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				B43A22871561417B8499F8BD /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		320D9BCA4CD743C7ABD93A50 /* Nightly */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F90677EFCB544A98A4ECDB08 /* Build configuration list for PBXAggregateTarget "Nightly" */;
+			buildPhases = (
+				9191E695EBD64799830C9A8E /* CMake Rules */,
+			);
+			dependencies = (
+				58932BCFA01B4136B57A4AA4 /* PBXTargetDependency */,
+			);
+			name = Nightly;
+			productName = Nightly;
+		};
+		3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 12EF2B90F8F541399408BA74 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				A36CDACE49294C70A6601275 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		7507202B772E44CFBAF0AA79 /* Continuous */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D174E53992734156A8B5DC06 /* Build configuration list for PBXAggregateTarget "Continuous" */;
+			buildPhases = (
+				C49B70E682484AB683BF193A /* CMake Rules */,
+			);
+			dependencies = (
+				D1DBFFFD2610445891DDD376 /* PBXTargetDependency */,
+			);
+			name = Continuous;
+			productName = Continuous;
+		};
+		AFEEB6B9C2B3454598C89C32 /* Experimental */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 293C9256E60246ADA0F434D0 /* Build configuration list for PBXAggregateTarget "Experimental" */;
+			buildPhases = (
+				3EF9823F2E70404FAA745A2C /* CMake Rules */,
+			);
+			dependencies = (
+				26BDD52270C64F1D9DAA3CD4 /* PBXTargetDependency */,
+			);
+			name = Experimental;
+			productName = Experimental;
+		};
+		EA57F9EB34EE453B9555F61E /* NightlyMemoryCheck */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E9ED6F29FEAF47C18E7B3AC4 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */;
+			buildPhases = (
+				912867FE5BDD4C54A2F276E5 /* CMake Rules */,
+			);
+			dependencies = (
+				91485A7B0A2B4CC5B7BF301D /* PBXTargetDependency */,
+			);
+			name = NightlyMemoryCheck;
+			productName = NightlyMemoryCheck;
+		};
+		EC9FA500EADA481D8FA12693 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0F22398A97F149A283D2E495 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				AC7FC6BC315D4D3AA27ECCD6 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				926B193E77A1451C9B63C9FC /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		F50A10DE91864524B27D9105 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 872DA9DCB1034D0784884A73 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				E27E45C5753942D790150E25 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				55EE8F23250A407281FE6F72 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		153A4F047B214B809B0BECC0 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexSeparableFilter.cpp */ = {isa = PBXBuildFile; fileRef = 17E13895EC5F4FE6A2093E6E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexSeparableFilter.cpp */; };
+		3381BACD8F544F468042B690 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CFF51B23106E48BC8521052B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */; };
+		464B53AA66B848099A1F3308 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/utils/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DDBD3FF37E1A45B681E46E1A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/utils/CMakeLists.txt */; };
+		4834A985D9294E34AA2AA2CD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexSeparableKernel.cpp */ = {isa = PBXBuildFile; fileRef = EB7AD2D1EC8B4334A5254378 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexSeparableKernel.cpp */; };
+		4C8EB37ADDE04218817BD2EC /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexCache.cpp */ = {isa = PBXBuildFile; fileRef = 2CB64BA57526491493C64366 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexCache.cpp */; };
+		530769CEE78D49ED84BCBF66 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/halftest.cpp */ = {isa = PBXBuildFile; fileRef = 85AA471EEA5E48849E66BEDD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/halftest.cpp */; };
+		55CB0F852B3E4FDBADA20F8D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3AD796B5BF294415824F1AE0 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */; };
+		67DEE244FD3941C39E5EA161 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/wtest.cpp */ = {isa = PBXBuildFile; fileRef = C069249CD871406A99A6536E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/wtest.cpp */; };
+		6E2A6ABF8DD44981A08332AA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexHalf.cpp */ = {isa = PBXBuildFile; fileRef = 2E874CB15B2744548908C1B7 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexHalf.cpp */; };
+		78A543BC5ED5491880B383B6 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/rtest.cpp */ = {isa = PBXBuildFile; fileRef = 2FE0BC6532B04626B88AF3C3 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/rtest.cpp */; };
+		79E84CF954984472AC415714 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexWriter.cpp */ = {isa = PBXBuildFile; fileRef = 1D6752B8844A4E5EBCA8552C /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexWriter.cpp */; };
+		972148BD66344EA68EE970DE /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/utils/ptxinfo.cpp */ = {isa = PBXBuildFile; fileRef = 0AE6FA3B8F33438C80AB33D3 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/utils/ptxinfo.cpp */; };
+		9FD36B57A46E41C69907B864 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/ftest.cpp */ = {isa = PBXBuildFile; fileRef = D7C1CD1E02D84ADEAB7989E1 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/ftest.cpp */; };
+		A26C5E6FF331446896432E28 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexReader.cpp */ = {isa = PBXBuildFile; fileRef = 7E4610764E4E4CE7960548AA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexReader.cpp */; };
+		A279D2A870F0463ABE069FB6 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = BFE43F8EB47D436FAF71CE74 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */; };
+		B8923C7C3B6340B4A090A759 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexUtils.cpp */ = {isa = PBXBuildFile; fileRef = B52CDA7A8F524D1A9E604AB4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexUtils.cpp */; };
+		CAFFC2B845F840C09F9061F5 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexFilters.cpp */ = {isa = PBXBuildFile; fileRef = 3A836769BCC54233BE64202D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexFilters.cpp */; };
+		D3C1EBD7A637458C8BBCB763 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexTriangleKernel.cpp */ = {isa = PBXBuildFile; fileRef = AE8473C1BD0F4B18862B11FA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexTriangleKernel.cpp */; };
+		E45603D0B56E4D818163AEBC /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = FF39E805C2254BE89D0C6E20 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/CMakeLists.txt */; };
+		ED19C9188373436387EEA1F1 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexTriangleFilter.cpp */ = {isa = PBXBuildFile; fileRef = 26D96EDACE334B5986967575 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexTriangleFilter.cpp */; };
+		F09C5B435B8E4DC09B137477 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CEA5E95CFEBC4376A87FCAF8 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1852C9027A9345D3A726395F /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		882789C0C92E418D8B48CEA6 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		98B94D39AB114082AA8D2091 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		EE973A7768514CCBA17410B5 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0702A4720E074FD0ADF2C756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED35F1741A0C4E73B51FBF89;
+			remoteInfo = Ptex_static;
+		};
+		0B0DC073BB184286ACEE8888 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		12A309B13927409E9FAB0A84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D3996D0D25460F90DCC73C;
+			remoteInfo = ftest;
+		};
+		153DF2EAE1F74B9EBD015A08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		195E4263B0C54741BFB00ABD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10E6A6B5BC764F47B3CC2808;
+			remoteInfo = ALL_BUILD;
+		};
+		19F7047530C040189F0F8C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AFE5C95A5804152903D39D0;
+			remoteInfo = rtest;
+		};
+		2E04E4DCF9F1439980E1CD0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		32FA259BF447438FAFF158F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED35F1741A0C4E73B51FBF89;
+			remoteInfo = Ptex_static;
+		};
+		4EEE0318642143BA8A026E57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92FFC062158F4D1D8F4D6D78;
+			remoteInfo = halftest;
+		};
+		5AD12AC400B448258860905B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		5CD12C5D3B1E47A6B38F6770 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED35F1741A0C4E73B51FBF89;
+			remoteInfo = Ptex_static;
+		};
+		5D8D029BC7F04CFA8F7FE249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		6B2C7A4EDBE34632AA5B27F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		79661C68DE4C4CEF9C709874 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		8199B2DF55DC4B5BA266E3D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84516A14FBF442119ED99115;
+			remoteInfo = ptxinfo;
+		};
+		872779A5D2FA4015AA6DFCE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED35F1741A0C4E73B51FBF89;
+			remoteInfo = Ptex_static;
+		};
+		885646737E2249C2AB1BFEF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		902609F55CF247F39CAE238E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		A95DFBB7D37F434C81C1467E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		AB3BAA0E00E242E6A3544AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0580232B4C5F4ADB876E6F00;
+			remoteInfo = wtest;
+		};
+		B81B0A1109A543C48693B924 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		CD023A3948B14BE8B2C5FB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED35F1741A0C4E73B51FBF89;
+			remoteInfo = Ptex_static;
+		};
+		DB6853F3004D43F7AF21E277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10E6A6B5BC764F47B3CC2808;
+			remoteInfo = ALL_BUILD;
+		};
+		E621BAB643434E45B7505C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6585527D4E40CBA788798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED35F1741A0C4E73B51FBF89;
+			remoteInfo = Ptex_static;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AE6FA3B8F33438C80AB33D3 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/utils/ptxinfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ptxinfo.cpp; path = src/utils/ptxinfo.cpp; sourceTree = SOURCE_ROOT; };
+		17E13895EC5F4FE6A2093E6E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexSeparableFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexSeparableFilter.cpp; path = src/ptex/PtexSeparableFilter.cpp; sourceTree = SOURCE_ROOT; };
+		1D6752B8844A4E5EBCA8552C /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexWriter.cpp; path = src/ptex/PtexWriter.cpp; sourceTree = SOURCE_ROOT; };
+		26D96EDACE334B5986967575 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexTriangleFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexTriangleFilter.cpp; path = src/ptex/PtexTriangleFilter.cpp; sourceTree = SOURCE_ROOT; };
+		2CB64BA57526491493C64366 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexCache.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexCache.cpp; path = src/ptex/PtexCache.cpp; sourceTree = SOURCE_ROOT; };
+		2E874CB15B2744548908C1B7 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexHalf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexHalf.cpp; path = src/ptex/PtexHalf.cpp; sourceTree = SOURCE_ROOT; };
+		2FE0BC6532B04626B88AF3C3 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/rtest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rtest.cpp; path = src/tests/rtest.cpp; sourceTree = SOURCE_ROOT; };
+		3A836769BCC54233BE64202D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexFilters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexFilters.cpp; path = src/ptex/PtexFilters.cpp; sourceTree = SOURCE_ROOT; };
+		3AD796B5BF294415824F1AE0 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/tests/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		41A17947713C4EB8A89C4A53 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		566571C8974D45D094D5D651 /* rtest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = rtest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74475F6CED5142B381F9A1A0 /* halftest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = halftest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4610764E4E4CE7960548AA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexReader.cpp; path = src/ptex/PtexReader.cpp; sourceTree = SOURCE_ROOT; };
+		85AA471EEA5E48849E66BEDD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/halftest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = halftest.cpp; path = src/tests/halftest.cpp; sourceTree = SOURCE_ROOT; };
+		8DD37815064F4D008AE5A48A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		92B7FBEC0970415FBD389857 /* wtest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = wtest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EA89AD1667474A851D40F8 /* ftest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ftest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8473C1BD0F4B18862B11FA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexTriangleKernel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexTriangleKernel.cpp; path = src/ptex/PtexTriangleKernel.cpp; sourceTree = SOURCE_ROOT; };
+		B52CDA7A8F524D1A9E604AB4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexUtils.cpp; path = src/ptex/PtexUtils.cpp; sourceTree = SOURCE_ROOT; };
+		BAA756FDB4A94584B8831D08 /* ptxinfo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ptxinfo; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE43F8EB47D436FAF71CE74 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/tests/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C069249CD871406A99A6536E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/wtest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wtest.cpp; path = src/tests/wtest.cpp; sourceTree = SOURCE_ROOT; };
+		C8FFD3B54F85451F825D30BE /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C9C47FCA49E74569A0D87CE2 /* Ptex_static */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPtex.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA5E95CFEBC4376A87FCAF8 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/tests/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CFF51B23106E48BC8521052B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/tests/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D2908A39990741DFAF761226 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D7C1CD1E02D84ADEAB7989E1 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/ftest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ftest.cpp; path = src/tests/ftest.cpp; sourceTree = SOURCE_ROOT; };
+		DDBD3FF37E1A45B681E46E1A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/utils/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/utils/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		EB7AD2D1EC8B4334A5254378 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexSeparableKernel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PtexSeparableKernel.cpp; path = src/ptex/PtexSeparableKernel.cpp; sourceTree = SOURCE_ROOT; };
+		F1B784341FF4449C8EAD0EF5 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FF39E805C2254BE89D0C6E20 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/ptex/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		04917831773047E098FDFECF /* wtest */ = {
+			isa = PBXGroup;
+			children = (
+				6B0EA6FC3FEC43A9886A7705 /* Source Files */,
+				BFE43F8EB47D436FAF71CE74 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */,
+			);
+			name = wtest;
+			sourceTree = "<group>";
+		};
+		05C37F9CCF44488CAF2E2C00 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		0B5E4B61DBE846C1926686D2 /* ptxinfo */ = {
+			isa = PBXGroup;
+			children = (
+				11AEB4F74BE3464D9BACD1B6 /* Source Files */,
+				DDBD3FF37E1A45B681E46E1A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/utils/CMakeLists.txt */,
+			);
+			name = ptxinfo;
+			sourceTree = "<group>";
+		};
+		11AEB4F74BE3464D9BACD1B6 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AE6FA3B8F33438C80AB33D3 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/utils/ptxinfo.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1DAA2869D23E41EFB3C72887 /* Nightly */ = {
+			isa = PBXGroup;
+			children = (
+				F018B70440E54E10AF8E3B31 /* CMake Rules */,
+				C8FFD3B54F85451F825D30BE /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/CMakeLists.txt */,
+			);
+			name = Nightly;
+			sourceTree = "<group>";
+		};
+		28B642E54D7F4441BDE348F0 /* rtest */ = {
+			isa = PBXGroup;
+			children = (
+				5B3989747EE64F33BD8C262F /* Source Files */,
+				CEA5E95CFEBC4376A87FCAF8 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */,
+			);
+			name = rtest;
+			sourceTree = "<group>";
+		};
+		2DD3DBCFD3E74F098D8FDC1C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7C1CD1E02D84ADEAB7989E1 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/ftest.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		37C9BC6C8D9B4DF28C088342 /* ftest */ = {
+			isa = PBXGroup;
+			children = (
+				2DD3DBCFD3E74F098D8FDC1C /* Source Files */,
+				3AD796B5BF294415824F1AE0 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */,
+			);
+			name = ftest;
+			sourceTree = "<group>";
+		};
+		3B11D5185B214E48B15FD500 /* Continuous */ = {
+			isa = PBXGroup;
+			children = (
+				05C37F9CCF44488CAF2E2C00 /* CMake Rules */,
+				D2908A39990741DFAF761226 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/CMakeLists.txt */,
+			);
+			name = Continuous;
+			sourceTree = "<group>";
+		};
+		4CBB7931D6894D0680C79E46 /* Experimental */ = {
+			isa = PBXGroup;
+			children = (
+				77C7AAD0F0844366AF25CE39 /* CMake Rules */,
+				41A17947713C4EB8A89C4A53 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/CMakeLists.txt */,
+			);
+			name = Experimental;
+			sourceTree = "<group>";
+		};
+		5B3989747EE64F33BD8C262F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FE0BC6532B04626B88AF3C3 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/rtest.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		6B0EA6FC3FEC43A9886A7705 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C069249CD871406A99A6536E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/wtest.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		6C3ED6C1AA8E4D2581010589 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		77C7AAD0F0844366AF25CE39 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7E0B518B0DFC4E9C8257BDF0 /* NightlyMemoryCheck */ = {
+			isa = PBXGroup;
+			children = (
+				6C3ED6C1AA8E4D2581010589 /* CMake Rules */,
+				F1B784341FF4449C8EAD0EF5 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/CMakeLists.txt */,
+			);
+			name = NightlyMemoryCheck;
+			sourceTree = "<group>";
+		};
+		A40F736E8FE74E3CB206FA2F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A82A812A23034FB49B91AB06 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				85AA471EEA5E48849E66BEDD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/halftest.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		AA16E66A21DC455786467976 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CB64BA57526491493C64366 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexCache.cpp */,
+				3A836769BCC54233BE64202D /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexFilters.cpp */,
+				2E874CB15B2744548908C1B7 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexHalf.cpp */,
+				7E4610764E4E4CE7960548AA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexReader.cpp */,
+				17E13895EC5F4FE6A2093E6E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexSeparableFilter.cpp */,
+				EB7AD2D1EC8B4334A5254378 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexSeparableKernel.cpp */,
+				26D96EDACE334B5986967575 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexTriangleFilter.cpp */,
+				AE8473C1BD0F4B18862B11FA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexTriangleKernel.cpp */,
+				B52CDA7A8F524D1A9E604AB4 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexUtils.cpp */,
+				1D6752B8844A4E5EBCA8552C /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexWriter.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		ACF9999B3A344CA09DE40085 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				D29E171C6BD1455F8EFE5FE5 /* Ptex_static */,
+				0B5E4B61DBE846C1926686D2 /* ptxinfo */,
+				B9EE97D80E9D438E8E5CD50E /* halftest */,
+				37C9BC6C8D9B4DF28C088342 /* ftest */,
+				28B642E54D7F4441BDE348F0 /* rtest */,
+				04917831773047E098FDFECF /* wtest */,
+			);
+			name = ext;
+			sourceTree = "<group>";
+		};
+		ADDAB3D681CF46B590889D5C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				A40F736E8FE74E3CB206FA2F /* CMake Rules */,
+				8DD37815064F4D008AE5A48A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B9EE97D80E9D438E8E5CD50E /* halftest */ = {
+			isa = PBXGroup;
+			children = (
+				A82A812A23034FB49B91AB06 /* Source Files */,
+				CFF51B23106E48BC8521052B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/CMakeLists.txt */,
+			);
+			name = halftest;
+			sourceTree = "<group>";
+		};
+		BEC2C1815B2C437A9E072055 /* CTestDashboardTargets */ = {
+			isa = PBXGroup;
+			children = (
+				7E0B518B0DFC4E9C8257BDF0 /* NightlyMemoryCheck */,
+				1DAA2869D23E41EFB3C72887 /* Nightly */,
+				3B11D5185B214E48B15FD500 /* Continuous */,
+				4CBB7931D6894D0680C79E46 /* Experimental */,
+			);
+			name = CTestDashboardTargets;
+			sourceTree = "<group>";
+		};
+		C7A5B6523D5345F6B789EF91 = {
+			isa = PBXGroup;
+			children = (
+				BEC2C1815B2C437A9E072055 /* CTestDashboardTargets */,
+				ADDAB3D681CF46B590889D5C /* ALL_BUILD */,
+				ACF9999B3A344CA09DE40085 /* ext */,
+				F804BF69197B4220B7992A86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D29E171C6BD1455F8EFE5FE5 /* Ptex_static */ = {
+			isa = PBXGroup;
+			children = (
+				AA16E66A21DC455786467976 /* Source Files */,
+				FF39E805C2254BE89D0C6E20 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/CMakeLists.txt */,
+			);
+			name = Ptex_static;
+			sourceTree = "<group>";
+		};
+		F018B70440E54E10AF8E3B31 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F804BF69197B4220B7992A86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9C47FCA49E74569A0D87CE2 /* Ptex_static */,
+				A0EA89AD1667474A851D40F8 /* ftest */,
+				74475F6CED5142B381F9A1A0 /* halftest */,
+				BAA756FDB4A94584B8831D08 /* ptxinfo */,
+				566571C8974D45D094D5D651 /* rtest */,
+				92B7FBEC0970415FBD389857 /* wtest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0580232B4C5F4ADB876E6F00 /* wtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8663DFA994B04FAD8A536B1D /* Build configuration list for PBXNativeTarget "wtest" */;
+			buildPhases = (
+				0E4B0286E33F4979A684B63F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E7D6E0BE6B04A088B0D84A7 /* PBXTargetDependency */,
+				49D7D6F0188F491B99E391C8 /* PBXTargetDependency */,
+			);
+			name = wtest;
+			productName = wtest;
+			productReference = 92B7FBEC0970415FBD389857 /* wtest */;
+			productType = "com.apple.product-type.tool";
+		};
+		3AFE5C95A5804152903D39D0 /* rtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC43B58FF5C4962AC8578C1 /* Build configuration list for PBXNativeTarget "rtest" */;
+			buildPhases = (
+				829B492E17C5494697D18C69 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E931F42D8D594ECD922BE561 /* PBXTargetDependency */,
+				D1C25E17E35F4CFF82D9EE56 /* PBXTargetDependency */,
+			);
+			name = rtest;
+			productName = rtest;
+			productReference = 566571C8974D45D094D5D651 /* rtest */;
+			productType = "com.apple.product-type.tool";
+		};
+		46D3996D0D25460F90DCC73C /* ftest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9DC87506F7B400E83E054C1 /* Build configuration list for PBXNativeTarget "ftest" */;
+			buildPhases = (
+				4D51D6504478415AA0D28B03 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC357DFA97E14428BEF80DE4 /* PBXTargetDependency */,
+				5490111E8DE6478D8A970FFB /* PBXTargetDependency */,
+			);
+			name = ftest;
+			productName = ftest;
+			productReference = A0EA89AD1667474A851D40F8 /* ftest */;
+			productType = "com.apple.product-type.tool";
+		};
+		84516A14FBF442119ED99115 /* ptxinfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D8595DD3374DC6A953E2AD /* Build configuration list for PBXNativeTarget "ptxinfo" */;
+			buildPhases = (
+				9262674531D14CD6AA69D517 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C54741EA63EF4738A0D3EB20 /* PBXTargetDependency */,
+				3193F09CEF254B5DA04859E1 /* PBXTargetDependency */,
+			);
+			name = ptxinfo;
+			productName = ptxinfo;
+			productReference = BAA756FDB4A94584B8831D08 /* ptxinfo */;
+			productType = "com.apple.product-type.tool";
+		};
+		92FFC062158F4D1D8F4D6D78 /* halftest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 254A3C4D83C248718617E398 /* Build configuration list for PBXNativeTarget "halftest" */;
+			buildPhases = (
+				591BC384FD154D91BB5179AA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C20BE8506A8C471A83D4B15E /* PBXTargetDependency */,
+				2CF415C1E6EE4BB38B541823 /* PBXTargetDependency */,
+			);
+			name = halftest;
+			productName = halftest;
+			productReference = 74475F6CED5142B381F9A1A0 /* halftest */;
+			productType = "com.apple.product-type.tool";
+		};
+		ED35F1741A0C4E73B51FBF89 /* Ptex_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B789C9AC6FA3414CB851F28A /* Build configuration list for PBXNativeTarget "Ptex_static" */;
+			buildPhases = (
+				F9C64BF62D9149EE8B2564A5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A06BB126FD54BEE87B0B4CA /* PBXTargetDependency */,
+			);
+			name = Ptex_static;
+			productName = Ptex_static;
+			productReference = C9C47FCA49E74569A0D87CE2 /* Ptex_static */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F6585527D4E40CBA788798D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 30AEEF71ECD145AE88AF0081 /* Build configuration list for PBXProject "ptex" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				98B94D39AB114082AA8D2091 /* Debug */,
+				1852C9027A9345D3A726395F /* Release */,
+				882789C0C92E418D8B48CEA6 /* MinSizeRel */,
+				EE973A7768514CCBA17410B5 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = C7A5B6523D5345F6B789EF91;
+			projectDirPath = ../../../../src/ext/ptex;
+			projectRoot = "";
+			targets = (
+				10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */,
+				7507202B772E44CFBAF0AA79 /* Continuous */,
+				AFEEB6B9C2B3454598C89C32 /* Experimental */,
+				320D9BCA4CD743C7ABD93A50 /* Nightly */,
+				EA57F9EB34EE453B9555F61E /* NightlyMemoryCheck */,
+				ED35F1741A0C4E73B51FBF89 /* Ptex_static */,
+				12B1631189F74CB5B2B1490D /* RUN_TESTS */,
+				3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */,
+				46D3996D0D25460F90DCC73C /* ftest */,
+				92FFC062158F4D1D8F4D6D78 /* halftest */,
+				F50A10DE91864524B27D9105 /* install */,
+				EC9FA500EADA481D8FA12693 /* package */,
+				84516A14FBF442119ED99115 /* ptxinfo */,
+				3AFE5C95A5804152903D39D0 /* rtest */,
+				0580232B4C5F4ADB876E6F00 /* wtest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B607A8C3FF245D9A367BEE9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		2BBC25E4975142B5A6476548 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3EF9823F2E70404FAA745A2C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/CMakeScripts/Experimental_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		54A8EBEA203C4E188584E739 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		74F04D0C8BF74CDCB58C7628 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7B20B57D26084F9C8CA9072D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		8C15DA1339A843389E740B9C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		912867FE5BDD4C54A2F276E5 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/CMakeScripts/NightlyMemoryCheck_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		9191E695EBD64799830C9A8E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/CMakeScripts/Nightly_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		937E106C3AD5422C9C3A823B = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		987D5E8E0AE04EE6B4D83F5E = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A36CDACE49294C70A6601275 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		AC7FC6BC315D4D3AA27ECCD6 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		B43A22871561417B8499F8BD /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C12BA45379AA425B8ED5CA14 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C49B70E682484AB683BF193A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/CMakeScripts/Continuous_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E27E45C5753942D790150E25 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E5367F0A891C4840B5B2972F /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E4B0286E33F4979A684B63F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67DEE244FD3941C39E5EA161 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/wtest.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D51D6504478415AA0D28B03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD36B57A46E41C69907B864 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/ftest.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591BC384FD154D91BB5179AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530769CEE78D49ED84BCBF66 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/halftest.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		829B492E17C5494697D18C69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A543BC5ED5491880B383B6 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/tests/rtest.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9262674531D14CD6AA69D517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972148BD66344EA68EE970DE /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/utils/ptxinfo.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9C64BF62D9149EE8B2564A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8EB37ADDE04218817BD2EC /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexCache.cpp */,
+				CAFFC2B845F840C09F9061F5 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexFilters.cpp */,
+				6E2A6ABF8DD44981A08332AA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexHalf.cpp */,
+				A26C5E6FF331446896432E28 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexReader.cpp */,
+				153A4F047B214B809B0BECC0 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexSeparableFilter.cpp */,
+				4834A985D9294E34AA2AA2CD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexSeparableKernel.cpp */,
+				ED19C9188373436387EEA1F1 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexTriangleFilter.cpp */,
+				D3C1EBD7A637458C8BBCB763 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexTriangleKernel.cpp */,
+				B8923C7C3B6340B4A090A759 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexUtils.cpp */,
+				79E84CF954984472AC415714 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex/PtexWriter.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		060DD65A91064B8C9EBA0663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 5D8D029BC7F04CFA8F7FE249 /* PBXContainerItemProxy */;
+		};
+		252220638B824A059D477416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92FFC062158F4D1D8F4D6D78 /* halftest */;
+			targetProxy = 4EEE0318642143BA8A026E57 /* PBXContainerItemProxy */;
+		};
+		26BDD52270C64F1D9DAA3CD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 153DF2EAE1F74B9EBD015A08 /* PBXContainerItemProxy */;
+		};
+		2A06BB126FD54BEE87B0B4CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = B81B0A1109A543C48693B924 /* PBXContainerItemProxy */;
+		};
+		2CF415C1E6EE4BB38B541823 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 2E04E4DCF9F1439980E1CD0D /* PBXContainerItemProxy */;
+		};
+		3193F09CEF254B5DA04859E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 0B0DC073BB184286ACEE8888 /* PBXContainerItemProxy */;
+		};
+		49D7D6F0188F491B99E391C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 902609F55CF247F39CAE238E /* PBXContainerItemProxy */;
+		};
+		5490111E8DE6478D8A970FFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 885646737E2249C2AB1BFEF8 /* PBXContainerItemProxy */;
+		};
+		55EE8F23250A407281FE6F72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */;
+			targetProxy = DB6853F3004D43F7AF21E277 /* PBXContainerItemProxy */;
+		};
+		58932BCFA01B4136B57A4AA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 6B2C7A4EDBE34632AA5B27F1 /* PBXContainerItemProxy */;
+		};
+		7D5C4F8E0B2B4A67A3999FD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0580232B4C5F4ADB876E6F00 /* wtest */;
+			targetProxy = AB3BAA0E00E242E6A3544AF7 /* PBXContainerItemProxy */;
+		};
+		7E7D6E0BE6B04A088B0D84A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED35F1741A0C4E73B51FBF89 /* Ptex_static */;
+			targetProxy = CD023A3948B14BE8B2C5FB94 /* PBXContainerItemProxy */;
+		};
+		91485A7B0A2B4CC5B7BF301D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 79661C68DE4C4CEF9C709874 /* PBXContainerItemProxy */;
+		};
+		926B193E77A1451C9B63C9FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */;
+			targetProxy = 195E4263B0C54741BFB00ABD /* PBXContainerItemProxy */;
+		};
+		996D0358610E4360B20B8E9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D3996D0D25460F90DCC73C /* ftest */;
+			targetProxy = 12A309B13927409E9FAB0A84 /* PBXContainerItemProxy */;
+		};
+		B350A1758F6D4799B24D12D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84516A14FBF442119ED99115 /* ptxinfo */;
+			targetProxy = 8199B2DF55DC4B5BA266E3D2 /* PBXContainerItemProxy */;
+		};
+		C20BE8506A8C471A83D4B15E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED35F1741A0C4E73B51FBF89 /* Ptex_static */;
+			targetProxy = 32FA259BF447438FAFF158F1 /* PBXContainerItemProxy */;
+		};
+		C54741EA63EF4738A0D3EB20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED35F1741A0C4E73B51FBF89 /* Ptex_static */;
+			targetProxy = 0702A4720E074FD0ADF2C756 /* PBXContainerItemProxy */;
+		};
+		CC357DFA97E14428BEF80DE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED35F1741A0C4E73B51FBF89 /* Ptex_static */;
+			targetProxy = 5CD12C5D3B1E47A6B38F6770 /* PBXContainerItemProxy */;
+		};
+		D1C25E17E35F4CFF82D9EE56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = 5AD12AC400B448258860905B /* PBXContainerItemProxy */;
+		};
+		D1DBFFFD2610445891DDD376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = A95DFBB7D37F434C81C1467E /* PBXContainerItemProxy */;
+		};
+		E931F42D8D594ECD922BE561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED35F1741A0C4E73B51FBF89 /* Ptex_static */;
+			targetProxy = 872779A5D2FA4015AA6DFCE4 /* PBXContainerItemProxy */;
+		};
+		F4BCDD3321BF435895F46A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED35F1741A0C4E73B51FBF89 /* Ptex_static */;
+			targetProxy = E621BAB643434E45B7505C5B /* PBXContainerItemProxy */;
+		};
+		F943ABB399254EA494EE8D0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AFE5C95A5804152903D39D0 /* rtest */;
+			targetProxy = 19F7047530C040189F0F8C13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0289E9B4E1314B559381A148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0440F77F3D70407ABD412470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/Debug/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = wtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		08FF423365894B19ABD22A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Ptex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		130E55E2134246889DD29C80 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1569B26D221747A19E1540E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		156B0FDBB1B146A59EA6F925 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/RelWithDebInfo/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = wtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		16F7D674D1B54FDC9F56571F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1D0A9BAA9E294D63B01003D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/build";
+			};
+			name = Release;
+		};
+		1E1629B395AD46848D3BF5E6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/RelWithDebInfo/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		38422232AC8647BFA4E9268B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/Debug/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		3977C6F8F7924C79AF084757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4009C8700A834237BC89E6A7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		44D2FA68DC16492899EF6B48 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		450B11ED63C54609861047A7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		45B678DB88154D0E9B01E168 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4679DABB05764B17ABEFBD22 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'PTEX_VER=\"v2.1.33-4-g4cd8e9a (4cd8e9a6db2b06e478dfbbd8c26eb6df97f84483)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/MinSizeRel/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ptxinfo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4E03699A2F4D42F49EEBBE0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		56B3349085A94AF780E14A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/Release/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = halftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		56C155A187C3471D911756C3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5C3D3CD8A29C4BFE94C239E8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5CC02C4D3D8946A6AF791138 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		60E6D5223C4944A8B8B4647C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/build";
+			};
+			name = RelWithDebInfo;
+		};
+		62D482493522496BA805A87F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/Debug/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6317E201C8594A0EB608A036 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		68C42F26D6974E339F195D78 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Ptex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6C8C30892E2D480189A387D2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6CD2A1736EF54C1DB96CB8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		6CD8DDC58AF84694B0D8E745 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6E55D15C260A4EEB934574F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		704904CE7C78442B88E1D13E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Ptex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		72D7F7F252134012ABB24A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		74EE0AA42FFB40FF97F991CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		789FB82CDD53418A8233E1C6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7942208D441D4D9688C7350A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/MinSizeRel/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = halftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7D008BA0F2B24FD9AA2FB569 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7D8BAD74630F47DA8EAA8DD8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/RelWithDebInfo/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		87E8CB82219D4424AFC8F41B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		891AFDDCCF084613B30CB2A9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/MinSizeRel/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		909883861F044F6BBC08B8D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		919E475B699D4C52AB7B8DE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		941B4BF839C04762B4CC984A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Ptex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		94A1D43A4FD4457EA3FD0F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/Release/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		956B711AB5004537ADA1FD8D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9691D51AABC0410AB69CA9E5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/build";
+			};
+			name = MinSizeRel;
+		};
+		9EB6F99A269B40EDBBAC49F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9F33B2BF1D17482E826A7507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'PTEX_VER=\"v2.1.33-4-g4cd8e9a (4cd8e9a6db2b06e478dfbbd8c26eb6df97f84483)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/Release/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ptxinfo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A0C3F4297DD34D7CA6D9B293 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A13EBBCD87C4422FAE59FF94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'PTEX_VER=\"v2.1.33-4-g4cd8e9a (4cd8e9a6db2b06e478dfbbd8c26eb6df97f84483)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/Debug/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ptxinfo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		A764585C81024782950B6545 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'PTEX_VER=\"v2.1.33-4-g4cd8e9a (4cd8e9a6db2b06e478dfbbd8c26eb6df97f84483)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/RelWithDebInfo/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ptxinfo;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		ACBEFB5E69A64009B90781B0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B0F32169DADB4D729452DBA8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B8DD9070439D48F0BAFD3881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/Release/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = wtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		BF25EE78B77642C5AD0D400A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C615ABE66CE04D46B87E7BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/Debug/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = halftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C8EE71394E7343339CC7D529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/build";
+			};
+			name = Debug;
+		};
+		CB822659EB194C8FA6A1080E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CBDE7039ED97413D95796B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D7B40EE963404CA9AD1061D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		DA994D18C0AD433092439C87 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/RelWithDebInfo/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = halftest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DCFFC3B960D748FC85AE0943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/Release/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F4815C1EB95747999D54E93E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/MinSizeRel/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FB1F47F3B76741F2B51F7AFD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FB307FFACCDC47C99199D2E0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",PTEX_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/OpenEXR/IlmImf","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/OpenEXR/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/glog/src","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/glog","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/ptex/src/ptex");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++98 -Wall -Wextra -pedantic  -std=c++11 -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/ptex/MinSizeRel/libPtex.a /usr/local/lib/libz.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = wtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex/src/tests";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FDDF8980CDDC4602A12EE2D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/ptex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F22398A97F149A283D2E495 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3977C6F8F7924C79AF084757 /* Debug */,
+				4E03699A2F4D42F49EEBBE0A /* Release */,
+				956B711AB5004537ADA1FD8D /* MinSizeRel */,
+				ACBEFB5E69A64009B90781B0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		12C993A101A34E44A1D5E03B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CC02C4D3D8946A6AF791138 /* Debug */,
+				919E475B699D4C52AB7B8DE1 /* Release */,
+				6C8C30892E2D480189A387D2 /* MinSizeRel */,
+				130E55E2134246889DD29C80 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		12EF2B90F8F541399408BA74 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B40EE963404CA9AD1061D3 /* Debug */,
+				0289E9B4E1314B559381A148 /* Release */,
+				450B11ED63C54609861047A7 /* MinSizeRel */,
+				45B678DB88154D0E9B01E168 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		254A3C4D83C248718617E398 /* Build configuration list for PBXNativeTarget "halftest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C615ABE66CE04D46B87E7BCB /* Debug */,
+				56B3349085A94AF780E14A2A /* Release */,
+				7942208D441D4D9688C7350A /* MinSizeRel */,
+				DA994D18C0AD433092439C87 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		293C9256E60246ADA0F434D0 /* Build configuration list for PBXAggregateTarget "Experimental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E55D15C260A4EEB934574F9 /* Debug */,
+				74EE0AA42FFB40FF97F991CF /* Release */,
+				B0F32169DADB4D729452DBA8 /* MinSizeRel */,
+				789FB82CDD53418A8233E1C6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		30AEEF71ECD145AE88AF0081 /* Build configuration list for PBXProject "ptex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8EE71394E7343339CC7D529 /* Debug */,
+				1D0A9BAA9E294D63B01003D4 /* Release */,
+				9691D51AABC0410AB69CA9E5 /* MinSizeRel */,
+				60E6D5223C4944A8B8B4647C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4BC43B58FF5C4962AC8578C1 /* Build configuration list for PBXNativeTarget "rtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38422232AC8647BFA4E9268B /* Debug */,
+				DCFFC3B960D748FC85AE0943 /* Release */,
+				F4815C1EB95747999D54E93E /* MinSizeRel */,
+				1E1629B395AD46848D3BF5E6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7FDDCFD3614D402CBC64A7AD /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB6F99A269B40EDBBAC49F2 /* Debug */,
+				1569B26D221747A19E1540E1 /* Release */,
+				6317E201C8594A0EB608A036 /* MinSizeRel */,
+				7D008BA0F2B24FD9AA2FB569 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8663DFA994B04FAD8A536B1D /* Build configuration list for PBXNativeTarget "wtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0440F77F3D70407ABD412470 /* Debug */,
+				B8DD9070439D48F0BAFD3881 /* Release */,
+				FB307FFACCDC47C99199D2E0 /* MinSizeRel */,
+				156B0FDBB1B146A59EA6F925 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		872DA9DCB1034D0784884A73 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDE7039ED97413D95796B46 /* Debug */,
+				6CD2A1736EF54C1DB96CB8A9 /* Release */,
+				44D2FA68DC16492899EF6B48 /* MinSizeRel */,
+				CB822659EB194C8FA6A1080E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B789C9AC6FA3414CB851F28A /* Build configuration list for PBXNativeTarget "Ptex_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704904CE7C78442B88E1D13E /* Debug */,
+				08FF423365894B19ABD22A77 /* Release */,
+				941B4BF839C04762B4CC984A /* MinSizeRel */,
+				68C42F26D6974E339F195D78 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B9DC87506F7B400E83E054C1 /* Build configuration list for PBXNativeTarget "ftest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62D482493522496BA805A87F /* Debug */,
+				94A1D43A4FD4457EA3FD0F20 /* Release */,
+				891AFDDCCF084613B30CB2A9 /* MinSizeRel */,
+				7D8BAD74630F47DA8EAA8DD8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D174E53992734156A8B5DC06 /* Build configuration list for PBXAggregateTarget "Continuous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E8CB82219D4424AFC8F41B /* Debug */,
+				16F7D674D1B54FDC9F56571F /* Release */,
+				6CD8DDC58AF84694B0D8E745 /* MinSizeRel */,
+				A0C3F4297DD34D7CA6D9B293 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E2D8595DD3374DC6A953E2AD /* Build configuration list for PBXNativeTarget "ptxinfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A13EBBCD87C4422FAE59FF94 /* Debug */,
+				9F33B2BF1D17482E826A7507 /* Release */,
+				4679DABB05764B17ABEFBD22 /* MinSizeRel */,
+				A764585C81024782950B6545 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E9ED6F29FEAF47C18E7B3AC4 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72D7F7F252134012ABB24A6B /* Debug */,
+				FDDF8980CDDC4602A12EE2D9 /* Release */,
+				56C155A187C3471D911756C3 /* MinSizeRel */,
+				4009C8700A834237BC89E6A7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F90677EFCB544A98A4ECDB08 /* Build configuration list for PBXAggregateTarget "Nightly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF25EE78B77642C5AD0D400A /* Debug */,
+				909883861F044F6BBC08B8D9 /* Release */,
+				5C3D3CD8A29C4BFE94C239E8 /* MinSizeRel */,
+				FB1F47F3B76741F2B51F7AFD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F6585527D4E40CBA788798D /* Project object */;
+}

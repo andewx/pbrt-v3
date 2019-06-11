@@ -1,0 +1,2226 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AB1BACBBCA9847FB95551043 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				88B5171755E24B18AA62186C /* CMake Rules */,
+			);
+			dependencies = (
+				A2CED0492F20472982EEC9F9 /* PBXTargetDependency */,
+				A5B6A8391B1948C4B8E5379A /* PBXTargetDependency */,
+				F853C6719E9545398499DE5E /* PBXTargetDependency */,
+				2B61E8FB101546959D4B5774 /* PBXTargetDependency */,
+				71FF136FF0AA4DCE97C59117 /* PBXTargetDependency */,
+				8B5800C4263B4FFB921E6431 /* PBXTargetDependency */,
+				4DAB9415E18449B2B2F35B85 /* PBXTargetDependency */,
+				D9393A21E89B42F893337A5D /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		12B1631189F74CB5B2B1490D /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F82293D95B024048B120C717 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				A7345EAD69014A7FAA212143 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5E5C70C4423B4CF4BB97CDAF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				11E2FE2ECF0A4DA691E26D11 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		EC9FA500EADA481D8FA12693 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DC51582683C442ADB174C60C /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				F2900FD822F14B8593F17988 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				F57471752FC4401D8F718DA9 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		F50A10DE91864524B27D9105 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FA96231CEE554CFC92B8E35D /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				601B8F6CEAAF46D8BE9DC7D2 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				9BFE984F806945BBAD241763 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0E056275FDC6453CAD4990D2 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathFun.cpp */ = {isa = PBXBuildFile; fileRef = 57B333192C424F46BEB18909 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathFun.cpp */; };
+		0E65E6BF40464D1FA392F4FD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphorePosix.cpp */ = {isa = PBXBuildFile; fileRef = 9662DDA28FB74BF5A3AF796A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphorePosix.cpp */; };
+		1ABF449CB53A4A589F64E24B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 916CDB8F548A4280938D2646 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/CMakeLists.txt */; };
+		1FB854A860F840709F3DCD66 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathShear.cpp */ = {isa = PBXBuildFile; fileRef = 6C6E9FC1208845E69E4313A6 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathShear.cpp */; };
+		209AA8E1B58A489389B28E73 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadPosix.cpp */ = {isa = PBXBuildFile; fileRef = 2E00CEFAD5EE49B886D531EB /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadPosix.cpp */; };
+		2C320DC16B2049BA8272EB02 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadMutexPosix.cpp */ = {isa = PBXBuildFile; fileRef = 1142D58E9C9248D6953C1211 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadMutexPosix.cpp */; };
+		37F88153D2AE441EA1A80A14 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/IexMathFpu.cpp */ = {isa = PBXBuildFile; fileRef = 755AB8293FCB48B5854653F0 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/IexMathFpu.cpp */; };
+		38BD036AAC0E475F9D07174A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadPool.cpp */ = {isa = PBXBuildFile; fileRef = 8E368909B7874C43B46A8E5E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadPool.cpp */; };
+		487B86C8401A4310A814DA3C /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D992031CB53F4EBD9912C69A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */; };
+		59CC0176BB7847C581424EC5 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThread.cpp */ = {isa = PBXBuildFile; fileRef = 624DB2F697074D78B667DF79 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThread.cpp */; };
+		5B861DC944A54F97B5011401 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7C9CF06EA0004118B9C7523E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/CMakeLists.txt */; };
+		67EE8EEEB162492F818036F6 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/half.cpp */ = {isa = PBXBuildFile; fileRef = 01C6F04C081C4887826718AF /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/half.cpp */; };
+		71E084F665104A279E3F802A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/eLut.cpp */ = {isa = PBXBuildFile; fileRef = 8570795D60C146508BBF4DBF /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/eLut.cpp */; };
+		73C9E8203DA44731ABF49AEC /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/IexMathFloatExc.cpp */ = {isa = PBXBuildFile; fileRef = F6E050743B9742BB89BEDD95 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/IexMathFloatExc.cpp */; };
+		83C6ABA858D64CD5A02A8228 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexBaseExc.cpp */ = {isa = PBXBuildFile; fileRef = 324067A8D34249DF9F49EFFF /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexBaseExc.cpp */; };
+		850BB84E5630434E8162A7BB /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathColorAlgo.cpp */ = {isa = PBXBuildFile; fileRef = D56E660E1E0F47248F737209 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathColorAlgo.cpp */; };
+		9B18B302585345F5BF254786 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathBox.cpp */ = {isa = PBXBuildFile; fileRef = 0673EDA741FA4777A0DA7F82 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathBox.cpp */; };
+		A03C8772487A421FBF5DAF24 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8E39888DE50440369E41430B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */; };
+		A5799B6ADE494E2FB8ED1EE1 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathMatrixAlgo.cpp */ = {isa = PBXBuildFile; fileRef = 72A25F929AE744948ED27CA2 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathMatrixAlgo.cpp */; };
+		B719E9CCEB3F4EF39F5B2B49 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DF55502B2B524EF2A2D72097 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/CMakeLists.txt */; };
+		BD4EBEF0B40941D885DF44EE /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/toFloat.cpp */ = {isa = PBXBuildFile; fileRef = EC2ABE3A0C7B4F14BFA37D66 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/toFloat.cpp */; };
+		C5110EF19D954AB0843BAF64 /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half/eLut.h.rule */ = {isa = PBXBuildFile; fileRef = 7B8A9AA35A3240E5B05F544A /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half/eLut.h.rule */; };
+		D7D1256F75064EE180983BA7 /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half/toFloat.h.rule */ = {isa = PBXBuildFile; fileRef = D873095B818B4A91A7ACC1CE /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half/toFloat.h.rule */; };
+		D8C9D9CBA868433DBC8056AD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathVec.cpp */ = {isa = PBXBuildFile; fileRef = 6F1B953C62E94676AA3CAA6F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathVec.cpp */; };
+		DC4C109BEF6F4472B980B6D2 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 04B02E48436F4B83BB5FDC56 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/CMakeLists.txt */; };
+		DEFFDDC5AA8A4A7A90425B8F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathRandom.cpp */ = {isa = PBXBuildFile; fileRef = B54EF67A216441CB8DBD6F6C /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathRandom.cpp */; };
+		E06F8D126DCB4BA3BB5D8711 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexThrowErrnoExc.cpp */ = {isa = PBXBuildFile; fileRef = 2B23AD7D7AD348C9B11D8C9F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexThrowErrnoExc.cpp */; };
+		E08DA73522BE4554B13440EA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphorePosixCompat.cpp */ = {isa = PBXBuildFile; fileRef = A4FE2DEA9B874DB2B638343B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphorePosixCompat.cpp */; };
+		E8A571F7590541A2B84DCCA2 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 85DE118DDDFA4759B24BCC29 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */; };
+		F0B454DD98F34145A52A74E6 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphore.cpp */ = {isa = PBXBuildFile; fileRef = B61EFD1DEF6A4C70BC66C745 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphore.cpp */; };
+		F752BE79CBDE4011812CDEFA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadMutex.cpp */ = {isa = PBXBuildFile; fileRef = 2C9A5D18786D4D7E8E298E5E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadMutex.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		10AF3A5289C84FEF8344968E /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		18705F6AF83B4538A1FF720A /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		74BA18157BAF488EA844ED03 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		AD1F525B0B564B77B1C96552 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		05FB042E7F8D40DCB71C44A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BADD502F2C124DBE8C171450;
+			remoteInfo = Iex;
+		};
+		092368B7DC4E45D3B344B35F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6906F80BCF784A2D88FE36D0;
+			remoteInfo = toFloat;
+		};
+		26CB8956856844B29D14474A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BADD502F2C124DBE8C171450;
+			remoteInfo = Iex;
+		};
+		42DC0FCD167049EA892CB7AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9ACCBC23DCE4D86ADB41A37;
+			remoteInfo = IexMath;
+		};
+		46CDFB134A0F4069A94309C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C7E1237D733409D930E0C11;
+			remoteInfo = Imath;
+		};
+		4C265ED9C3174478A0E37F7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BADD502F2C124DBE8C171450;
+			remoteInfo = Iex;
+		};
+		5655CE458625434D825CE354 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8324CA6A26044E6ACFD0346;
+			remoteInfo = Half;
+		};
+		89B677D9DE8740ABB402C72D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BADD502F2C124DBE8C171450;
+			remoteInfo = Iex;
+		};
+		8EF040BA4A3D46F6A527F396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78B28C7C529C415A8D831457;
+			remoteInfo = eLut;
+		};
+		A66A44022AFE4B868B5D3EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10E6A6B5BC764F47B3CC2808;
+			remoteInfo = ALL_BUILD;
+		};
+		BD32AFB6FB04425CB491F1D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6906F80BCF784A2D88FE36D0;
+			remoteInfo = toFloat;
+		};
+		BE9F97285E0C4873B40B9126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05371C3CC1DC41DE957280DA;
+			remoteInfo = IlmThread;
+		};
+		C76DAB4CA3744BFBBC5C1815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B5C77A7F2714CA7B4D4F70B;
+			remoteInfo = ZERO_CHECK;
+		};
+		DE2E4E419E674407B3438FE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78B28C7C529C415A8D831457;
+			remoteInfo = eLut;
+		};
+		DF57FF192DF247FAAB9726CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6FA36F574644109B65967DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10E6A6B5BC764F47B3CC2808;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C6F04C081C4887826718AF /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/half.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = half.cpp; path = Half/half.cpp; sourceTree = SOURCE_ROOT; };
+		04B02E48436F4B83BB5FDC56 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = IexMath/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0673EDA741FA4777A0DA7F82 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathBox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImathBox.cpp; path = Imath/ImathBox.cpp; sourceTree = SOURCE_ROOT; };
+		1142D58E9C9248D6953C1211 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadMutexPosix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IlmThreadMutexPosix.cpp; path = IlmThread/IlmThreadMutexPosix.cpp; sourceTree = SOURCE_ROOT; };
+		20227FEA7FEF4D6E85100E63 /* eLut */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = eLut; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B23AD7D7AD348C9B11D8C9F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexThrowErrnoExc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IexThrowErrnoExc.cpp; path = Iex/IexThrowErrnoExc.cpp; sourceTree = SOURCE_ROOT; };
+		2C9A5D18786D4D7E8E298E5E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadMutex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IlmThreadMutex.cpp; path = IlmThread/IlmThreadMutex.cpp; sourceTree = SOURCE_ROOT; };
+		2E00CEFAD5EE49B886D531EB /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadPosix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IlmThreadPosix.cpp; path = IlmThread/IlmThreadPosix.cpp; sourceTree = SOURCE_ROOT; };
+		324067A8D34249DF9F49EFFF /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexBaseExc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IexBaseExc.cpp; path = Iex/IexBaseExc.cpp; sourceTree = SOURCE_ROOT; };
+		516045B672B64E229CF2E976 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		57B333192C424F46BEB18909 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathFun.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImathFun.cpp; path = Imath/ImathFun.cpp; sourceTree = SOURCE_ROOT; };
+		624DB2F697074D78B667DF79 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThread.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IlmThread.cpp; path = IlmThread/IlmThread.cpp; sourceTree = SOURCE_ROOT; };
+		6C6E9FC1208845E69E4313A6 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathShear.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImathShear.cpp; path = Imath/ImathShear.cpp; sourceTree = SOURCE_ROOT; };
+		6F1B953C62E94676AA3CAA6F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathVec.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImathVec.cpp; path = Imath/ImathVec.cpp; sourceTree = SOURCE_ROOT; };
+		72A25F929AE744948ED27CA2 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathMatrixAlgo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImathMatrixAlgo.cpp; path = Imath/ImathMatrixAlgo.cpp; sourceTree = SOURCE_ROOT; };
+		732A60A2EED849E2BDA5BD4A /* IlmThread */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libIlmThread.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		755AB8293FCB48B5854653F0 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/IexMathFpu.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IexMathFpu.cpp; path = IexMath/IexMathFpu.cpp; sourceTree = SOURCE_ROOT; };
+		7B8A9AA35A3240E5B05F544A /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half/eLut.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = eLut.h.rule; path = "../../../../xcode-build/src/ext/openexr/IlmBase/Half/eLut.h.rule"; sourceTree = SOURCE_ROOT; };
+		7C9CF06EA0004118B9C7523E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = Iex/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8570795D60C146508BBF4DBF /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/eLut.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = eLut.cpp; path = Half/eLut.cpp; sourceTree = SOURCE_ROOT; };
+		85DE118DDDFA4759B24BCC29 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = Half/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8E368909B7874C43B46A8E5E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadPool.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IlmThreadPool.cpp; path = IlmThread/IlmThreadPool.cpp; sourceTree = SOURCE_ROOT; };
+		8E39888DE50440369E41430B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = Half/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8ECC0C7FD7524CA1907D2307 /* toFloat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = toFloat; sourceTree = BUILT_PRODUCTS_DIR; };
+		916CDB8F548A4280938D2646 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = IlmThread/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9313C234D8404EA387CD3D6A /* Iex */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libIex.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9662DDA28FB74BF5A3AF796A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphorePosix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IlmThreadSemaphorePosix.cpp; path = IlmThread/IlmThreadSemaphorePosix.cpp; sourceTree = SOURCE_ROOT; };
+		A4FE2DEA9B874DB2B638343B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphorePosixCompat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IlmThreadSemaphorePosixCompat.cpp; path = IlmThread/IlmThreadSemaphorePosixCompat.cpp; sourceTree = SOURCE_ROOT; };
+		B54EF67A216441CB8DBD6F6C /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathRandom.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImathRandom.cpp; path = Imath/ImathRandom.cpp; sourceTree = SOURCE_ROOT; };
+		B61EFD1DEF6A4C70BC66C745 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphore.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IlmThreadSemaphore.cpp; path = IlmThread/IlmThreadSemaphore.cpp; sourceTree = SOURCE_ROOT; };
+		D56E660E1E0F47248F737209 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathColorAlgo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImathColorAlgo.cpp; path = Imath/ImathColorAlgo.cpp; sourceTree = SOURCE_ROOT; };
+		D873095B818B4A91A7ACC1CE /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half/toFloat.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = toFloat.h.rule; path = "../../../../xcode-build/src/ext/openexr/IlmBase/Half/toFloat.h.rule"; sourceTree = SOURCE_ROOT; };
+		D992031CB53F4EBD9912C69A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = Half/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DF55502B2B524EF2A2D72097 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = Imath/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E1A59C93854F4D769384FAC9 /* Imath */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libImath.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2ABE3A0C7B4F14BFA37D66 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/toFloat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = toFloat.cpp; path = Half/toFloat.cpp; sourceTree = SOURCE_ROOT; };
+		EDF322702F3A4FAE9F970CE9 /* Half */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libHalf.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3274B82F94849228E943086 /* IexMath */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libIexMath.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E050743B9742BB89BEDD95 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/IexMathFloatExc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IexMathFloatExc.cpp; path = IexMath/IexMathFloatExc.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0233E9A60CA543408FE4FFDA /* IlmThread */ = {
+			isa = PBXGroup;
+			children = (
+				EC0F1FFBEC9C4B43A0991EB6 /* Source Files */,
+				916CDB8F548A4280938D2646 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/CMakeLists.txt */,
+			);
+			name = IlmThread;
+			sourceTree = "<group>";
+		};
+		0DE766570BBA49CEB9E62ACF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDF322702F3A4FAE9F970CE9 /* Half */,
+				9313C234D8404EA387CD3D6A /* Iex */,
+				F3274B82F94849228E943086 /* IexMath */,
+				732A60A2EED849E2BDA5BD4A /* IlmThread */,
+				E1A59C93854F4D769384FAC9 /* Imath */,
+				20227FEA7FEF4D6E85100E63 /* eLut */,
+				8ECC0C7FD7524CA1907D2307 /* toFloat */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10D200088C474C708CEFB209 /* Imath */ = {
+			isa = PBXGroup;
+			children = (
+				AE4C446D988F46E59D9B2A45 /* Source Files */,
+				DF55502B2B524EF2A2D72097 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/CMakeLists.txt */,
+			);
+			name = Imath;
+			sourceTree = "<group>";
+		};
+		27DDFD0B2CE84DBF8FE78B27 = {
+			isa = PBXGroup;
+			children = (
+				D451D6DE428B4B22AA5C8FD1 /* ALL_BUILD */,
+				9650A0D7734548FFB3CF39E0 /* ext */,
+				0DE766570BBA49CEB9E62ACF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E1A9803DC7440EDB753EF98 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				01C6F04C081C4887826718AF /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/half.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		437E91182D14424FB86D21A8 /* Iex */ = {
+			isa = PBXGroup;
+			children = (
+				5B794431805C40B995C931CB /* Source Files */,
+				7C9CF06EA0004118B9C7523E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/CMakeLists.txt */,
+			);
+			name = Iex;
+			sourceTree = "<group>";
+		};
+		47AE42DB50104D61B67912EB /* IexMath */ = {
+			isa = PBXGroup;
+			children = (
+				E6D066103AE5456691476071 /* Source Files */,
+				04B02E48436F4B83BB5FDC56 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/CMakeLists.txt */,
+			);
+			name = IexMath;
+			sourceTree = "<group>";
+		};
+		4FBCAEAD8AA3494D93CE3B0E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				8570795D60C146508BBF4DBF /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/eLut.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		512338F5082E491FAA1975B6 /* toFloat */ = {
+			isa = PBXGroup;
+			children = (
+				893BD3EA734446D58CE78B83 /* Source Files */,
+				8E39888DE50440369E41430B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */,
+			);
+			name = toFloat;
+			sourceTree = "<group>";
+		};
+		5B794431805C40B995C931CB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				324067A8D34249DF9F49EFFF /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexBaseExc.cpp */,
+				2B23AD7D7AD348C9B11D8C9F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexThrowErrnoExc.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		684783AC3AEA406084C932BF /* Half */ = {
+			isa = PBXGroup;
+			children = (
+				2E1A9803DC7440EDB753EF98 /* Source Files */,
+				B0CCF185C4D94C6FA01F0227 /* CMake Rules */,
+				D992031CB53F4EBD9912C69A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */,
+			);
+			name = Half;
+			sourceTree = "<group>";
+		};
+		708E25540BAA47DD9907391E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		893BD3EA734446D58CE78B83 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC2ABE3A0C7B4F14BFA37D66 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/toFloat.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9650A0D7734548FFB3CF39E0 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				684783AC3AEA406084C932BF /* Half */,
+				512338F5082E491FAA1975B6 /* toFloat */,
+				AA7C20F53C8F41618D49EDEA /* eLut */,
+				437E91182D14424FB86D21A8 /* Iex */,
+				47AE42DB50104D61B67912EB /* IexMath */,
+				10D200088C474C708CEFB209 /* Imath */,
+				0233E9A60CA543408FE4FFDA /* IlmThread */,
+			);
+			name = ext;
+			sourceTree = "<group>";
+		};
+		AA7C20F53C8F41618D49EDEA /* eLut */ = {
+			isa = PBXGroup;
+			children = (
+				4FBCAEAD8AA3494D93CE3B0E /* Source Files */,
+				85DE118DDDFA4759B24BCC29 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/CMakeLists.txt */,
+			);
+			name = eLut;
+			sourceTree = "<group>";
+		};
+		AE4C446D988F46E59D9B2A45 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0673EDA741FA4777A0DA7F82 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathBox.cpp */,
+				D56E660E1E0F47248F737209 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathColorAlgo.cpp */,
+				57B333192C424F46BEB18909 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathFun.cpp */,
+				72A25F929AE744948ED27CA2 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathMatrixAlgo.cpp */,
+				B54EF67A216441CB8DBD6F6C /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathRandom.cpp */,
+				6C6E9FC1208845E69E4313A6 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathShear.cpp */,
+				6F1B953C62E94676AA3CAA6F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathVec.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B0CCF185C4D94C6FA01F0227 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				7B8A9AA35A3240E5B05F544A /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half/eLut.h.rule */,
+				D873095B818B4A91A7ACC1CE /* /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half/toFloat.h.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D451D6DE428B4B22AA5C8FD1 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				708E25540BAA47DD9907391E /* CMake Rules */,
+				516045B672B64E229CF2E976 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		E6D066103AE5456691476071 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6E050743B9742BB89BEDD95 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/IexMathFloatExc.cpp */,
+				755AB8293FCB48B5854653F0 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/IexMathFpu.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		EC0F1FFBEC9C4B43A0991EB6 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				624DB2F697074D78B667DF79 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThread.cpp */,
+				2C9A5D18786D4D7E8E298E5E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadMutex.cpp */,
+				1142D58E9C9248D6953C1211 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadMutexPosix.cpp */,
+				8E368909B7874C43B46A8E5E /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadPool.cpp */,
+				2E00CEFAD5EE49B886D531EB /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadPosix.cpp */,
+				B61EFD1DEF6A4C70BC66C745 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphore.cpp */,
+				9662DDA28FB74BF5A3AF796A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphorePosix.cpp */,
+				A4FE2DEA9B874DB2B638343B /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphorePosixCompat.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05371C3CC1DC41DE957280DA /* IlmThread */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9599F1805B4A688876824C /* Build configuration list for PBXNativeTarget "IlmThread" */;
+			buildPhases = (
+				8644B0C01FA84E42B3084FC5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CAA06C2CACA4A109C7E836F /* PBXTargetDependency */,
+			);
+			name = IlmThread;
+			productName = IlmThread;
+			productReference = 732A60A2EED849E2BDA5BD4A /* IlmThread */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4C7E1237D733409D930E0C11 /* Imath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8214424340374228AD1DF741 /* Build configuration list for PBXNativeTarget "Imath" */;
+			buildPhases = (
+				B7E59520551048D79D26663D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9889D898D57145EBA160F676 /* PBXTargetDependency */,
+			);
+			name = Imath;
+			productName = Imath;
+			productReference = E1A59C93854F4D769384FAC9 /* Imath */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6906F80BCF784A2D88FE36D0 /* toFloat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E71DA9BEA68A43A6A4C5CD15 /* Build configuration list for PBXNativeTarget "toFloat" */;
+			buildPhases = (
+				6FACA5377BCB4B2C82518C7C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = toFloat;
+			productName = toFloat;
+			productReference = 8ECC0C7FD7524CA1907D2307 /* toFloat */;
+			productType = "com.apple.product-type.tool";
+		};
+		78B28C7C529C415A8D831457 /* eLut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20A89940F0DD41E8B84285B1 /* Build configuration list for PBXNativeTarget "eLut" */;
+			buildPhases = (
+				3BC268E5E06D45CF9A5F3AD2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eLut;
+			productName = eLut;
+			productReference = 20227FEA7FEF4D6E85100E63 /* eLut */;
+			productType = "com.apple.product-type.tool";
+		};
+		A9ACCBC23DCE4D86ADB41A37 /* IexMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0CE5EC3AA14E17A4765EDE /* Build configuration list for PBXNativeTarget "IexMath" */;
+			buildPhases = (
+				6898284DEE8F49FCBFE0C175 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13EDE25BAC444D88968655C1 /* PBXTargetDependency */,
+			);
+			name = IexMath;
+			productName = IexMath;
+			productReference = F3274B82F94849228E943086 /* IexMath */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BADD502F2C124DBE8C171450 /* Iex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A28F8C37E5041A5BFCB9B51 /* Build configuration list for PBXNativeTarget "Iex" */;
+			buildPhases = (
+				2FA3506ED8B44F12BC5DC64A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Iex;
+			productName = Iex;
+			productReference = 9313C234D8404EA387CD3D6A /* Iex */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F8324CA6A26044E6ACFD0346 /* Half */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02001FEDE88B4DC7936C2BBA /* Build configuration list for PBXNativeTarget "Half" */;
+			buildPhases = (
+				2CABFE125D514D5490A6A34D /* CMake Rules */,
+				E1DFE825EC9D4B9695C3DB48 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2357B7CF3FCE41D59C4C09C1 /* PBXTargetDependency */,
+				E189D7611B37473E9859FA9A /* PBXTargetDependency */,
+			);
+			name = Half;
+			productName = Half;
+			productReference = EDF322702F3A4FAE9F970CE9 /* Half */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6FA36F574644109B65967DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 3E0EB143515B427C8D0E725C /* Build configuration list for PBXProject "ilmbase" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				74BA18157BAF488EA844ED03 /* Debug */,
+				18705F6AF83B4538A1FF720A /* Release */,
+				10AF3A5289C84FEF8344968E /* MinSizeRel */,
+				AD1F525B0B564B77B1C96552 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 27DDFD0B2CE84DBF8FE78B27;
+			projectDirPath = ../../../../../src/ext/openexr/IlmBase;
+			projectRoot = "";
+			targets = (
+				10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */,
+				F8324CA6A26044E6ACFD0346 /* Half */,
+				BADD502F2C124DBE8C171450 /* Iex */,
+				A9ACCBC23DCE4D86ADB41A37 /* IexMath */,
+				05371C3CC1DC41DE957280DA /* IlmThread */,
+				4C7E1237D733409D930E0C11 /* Imath */,
+				12B1631189F74CB5B2B1490D /* RUN_TESTS */,
+				3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */,
+				78B28C7C529C415A8D831457 /* eLut */,
+				F50A10DE91864524B27D9105 /* install */,
+				EC9FA500EADA481D8FA12693 /* package */,
+				6906F80BCF784A2D88FE36D0 /* toFloat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EFA5D538B6749AE854E0393 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		11E2FE2ECF0A4DA691E26D11 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		1D3863D014C64F82A77F9A59 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		2A7DA509E66C4319B5B9D0F3 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		2CABFE125D514D5490A6A34D /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half/CMakeScripts/Half_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		2FC5D04C9DFC4555A19223FD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		601B8F6CEAAF46D8BE9DC7D2 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		7765EFC1F3AC4D7C86D2D328 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		88B5171755E24B18AA62186C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A7345EAD69014A7FAA212143 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F2900FD822F14B8593F17988 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase -f /Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FA3506ED8B44F12BC5DC64A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C6ABA858D64CD5A02A8228 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexBaseExc.cpp */,
+				E06F8D126DCB4BA3BB5D8711 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex/IexThrowErrnoExc.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC268E5E06D45CF9A5F3AD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E084F665104A279E3F802A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/eLut.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6898284DEE8F49FCBFE0C175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73C9E8203DA44731ABF49AEC /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/IexMathFloatExc.cpp */,
+				37F88153D2AE441EA1A80A14 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath/IexMathFpu.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FACA5377BCB4B2C82518C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD4EBEF0B40941D885DF44EE /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/toFloat.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8644B0C01FA84E42B3084FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CC0176BB7847C581424EC5 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThread.cpp */,
+				F752BE79CBDE4011812CDEFA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadMutex.cpp */,
+				2C320DC16B2049BA8272EB02 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadMutexPosix.cpp */,
+				38BD036AAC0E475F9D07174A /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadPool.cpp */,
+				209AA8E1B58A489389B28E73 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadPosix.cpp */,
+				F0B454DD98F34145A52A74E6 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphore.cpp */,
+				0E65E6BF40464D1FA392F4FD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphorePosix.cpp */,
+				E08DA73522BE4554B13440EA /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread/IlmThreadSemaphorePosixCompat.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E59520551048D79D26663D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B18B302585345F5BF254786 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathBox.cpp */,
+				850BB84E5630434E8162A7BB /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathColorAlgo.cpp */,
+				0E056275FDC6453CAD4990D2 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathFun.cpp */,
+				A5799B6ADE494E2FB8ED1EE1 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathMatrixAlgo.cpp */,
+				DEFFDDC5AA8A4A7A90425B8F /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathRandom.cpp */,
+				1FB854A860F840709F3DCD66 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathShear.cpp */,
+				D8C9D9CBA868433DBC8056AD /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath/ImathVec.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1DFE825EC9D4B9695C3DB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EE8EEEB162492F818036F6 /* /Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half/half.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13EDE25BAC444D88968655C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BADD502F2C124DBE8C171450 /* Iex */;
+			targetProxy = 4C265ED9C3174478A0E37F7C /* PBXContainerItemProxy */;
+		};
+		2357B7CF3FCE41D59C4C09C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6906F80BCF784A2D88FE36D0 /* toFloat */;
+			targetProxy = 092368B7DC4E45D3B344B35F /* PBXContainerItemProxy */;
+		};
+		2B61E8FB101546959D4B5774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BADD502F2C124DBE8C171450 /* Iex */;
+			targetProxy = 89B677D9DE8740ABB402C72D /* PBXContainerItemProxy */;
+		};
+		4DAB9415E18449B2B2F35B85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05371C3CC1DC41DE957280DA /* IlmThread */;
+			targetProxy = BE9F97285E0C4873B40B9126 /* PBXContainerItemProxy */;
+		};
+		71FF136FF0AA4DCE97C59117 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9ACCBC23DCE4D86ADB41A37 /* IexMath */;
+			targetProxy = 42DC0FCD167049EA892CB7AC /* PBXContainerItemProxy */;
+		};
+		7CAA06C2CACA4A109C7E836F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BADD502F2C124DBE8C171450 /* Iex */;
+			targetProxy = 05FB042E7F8D40DCB71C44A7 /* PBXContainerItemProxy */;
+		};
+		8B5800C4263B4FFB921E6431 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C7E1237D733409D930E0C11 /* Imath */;
+			targetProxy = 46CDFB134A0F4069A94309C4 /* PBXContainerItemProxy */;
+		};
+		9889D898D57145EBA160F676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BADD502F2C124DBE8C171450 /* Iex */;
+			targetProxy = 26CB8956856844B29D14474A /* PBXContainerItemProxy */;
+		};
+		9BFE984F806945BBAD241763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */;
+			targetProxy = DF57FF192DF247FAAB9726CF /* PBXContainerItemProxy */;
+		};
+		A2CED0492F20472982EEC9F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8324CA6A26044E6ACFD0346 /* Half */;
+			targetProxy = 5655CE458625434D825CE354 /* PBXContainerItemProxy */;
+		};
+		A5B6A8391B1948C4B8E5379A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6906F80BCF784A2D88FE36D0 /* toFloat */;
+			targetProxy = BD32AFB6FB04425CB491F1D3 /* PBXContainerItemProxy */;
+		};
+		D9393A21E89B42F893337A5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B5C77A7F2714CA7B4D4F70B /* ZERO_CHECK */;
+			targetProxy = C76DAB4CA3744BFBBC5C1815 /* PBXContainerItemProxy */;
+		};
+		E189D7611B37473E9859FA9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78B28C7C529C415A8D831457 /* eLut */;
+			targetProxy = 8EF040BA4A3D46F6A527F396 /* PBXContainerItemProxy */;
+		};
+		F57471752FC4401D8F718DA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10E6A6B5BC764F47B3CC2808 /* ALL_BUILD */;
+			targetProxy = A66A44022AFE4B868B5D3EFD /* PBXContainerItemProxy */;
+		};
+		F853C6719E9545398499DE5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78B28C7C529C415A8D831457 /* eLut */;
+			targetProxy = DE2E4E419E674407B3438FE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00956139C9A740BE97E2E117 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0B38A54A4AF242FBA7C2B99E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		13085B7DAD514BF4A2B7A487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/build";
+			};
+			name = Debug;
+		};
+		13B3E2D2FDBB4E81B5867D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1AB30C07E6B44B8995EE234F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/build";
+			};
+			name = MinSizeRel;
+		};
+		1E734CEDC7444FC1AF0AABB4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		242C976E38E64C3CA503CA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		24B38EA74F194050A1BDC5EE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = toFloat;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		27AA0379D9FF4BC7A887EE5C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = eLut;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3898BD77DAC041D49DEBB190 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		42CE2B9357384EDAA8C0F479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		436FE83CD0DD41C9A9D63C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = eLut;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		447A817C01634DEAB0A70D79 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Imath;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Imath";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4BFE325829AC4DB2972B3803 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4D6407728B7848D789C07EDB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4EA75A6DC1224CAA9D627AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/build";
+			};
+			name = Release;
+		};
+		4FBC2B364BCC4CA9B6A0D751 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Half;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		53647FB530844E809C24115F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		53BFC5B00F9947A08AA517A2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5A65159CF60D4791800E1F3B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = IexMath;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IexMath";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5BA725ADF0EC45D5B51D2FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		60AB086EDD1B4C678E37DA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = toFloat;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6160034E18374F7C86E6602C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = IexMath;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IexMath";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6841291A8A324870A24217E5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6A18B2EDDA2042159A2E5284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Half;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		6A433112F0454C53B354C7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		76E00487219848FD9307326A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = toFloat;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7FC0DC41E5DF493589B16DE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Iex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Iex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		82525B60CA354EFF8A3C3E62 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Iex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Iex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		929A225D55F949F58FBF4FEF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = IexMath;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IexMath";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		95EC386E074C49A2B9CCBFBB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		96D23C9979404E14A26209B1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/build";
+			};
+			name = RelWithDebInfo;
+		};
+		A2571B562FE74E2AA57F8AB1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IlmThread","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = IlmThread;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IlmThread";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A6E705B0FD9E4E04A6228CA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A6EC8D7245C94F36B0D76C03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Half;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		AD52116905434472AE99AA8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = IexMath;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IexMath";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		AE7DAC0DCD1049F4BFBA61CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IlmThread","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = IlmThread;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IlmThread";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B2936602850A4AD897164C0C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = toFloat;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B62608A721CC4D8D8151AE91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = eLut;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B9249811BFB94A65BAD69C0A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IlmThread","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = IlmThread;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IlmThread";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B9E610E83D374932AA68A72B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C0B2FC6C13C94FE6B005135D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IlmThread","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = IlmThread;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/IlmThread";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D4514813FC654F289E77005A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Half;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D6F0E4528E27415FBDDFB5B1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = eLut;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Half";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D7F7F83CB30743189985DCBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		DBB8F8CCBE8E4DA684E70B4A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register        -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Imath;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Imath";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E7B78D47353A4B02A73516CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Imath;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Imath";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E848F22FDE8F418A9373C33C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		EBE912B4459B40ECBBBBFBA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register      -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Imath;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Imath";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F1BAD4E484A54A3FA6AEEC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Iex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Iex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F2C1FD089C1146ED8EF229A2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Iex","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Iex",/usr/local/include,"/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IexMath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Imath","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/Half","/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/config","/Users/andewx/Developer/Maketools/pbrt-v3/src/ext/openexr/IlmBase/IlmThread");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -Wno-deprecated-register -Wno-switch -Wno-tautological-compare -Wno-deprecated-register     -DNDEBUG   -D PBRT_HAVE_ALLOCA_H -D PBRT_HAVE_MEMORY_H -D PBRT_HAVE_HEX_FP_CONSTANTS -D PBRT_HAVE_BINARY_CONSTANTS -D PBRT_HAVE_CONSTEXPR -D PBRT_CONSTEXPR=constexpr -D PBRT_HAVE_ALIGNAS -D PBRT_HAVE_ALIGNOF -D PBRT_HAVE_ITIMER -D PBRT_HAVE_NONPOD_IN_UNIONS -D PBRT_HAVE_MMAP -D PBRT_NOINLINE=__attribute__\\(\\(noinline\\)\\) -D PBRT_HAVE_POSIX_MEMALIGN -D PBRT_THREAD_LOCAL=thread_local -pthread";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Iex;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase/Iex";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FDDAC7DD74624DB48CA512EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/andewx/Developer/Maketools/pbrt-v3/xcode-build/src/ext/openexr/IlmBase";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02001FEDE88B4DC7936C2BBA /* Build configuration list for PBXNativeTarget "Half" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6EC8D7245C94F36B0D76C03 /* Debug */,
+				6A18B2EDDA2042159A2E5284 /* Release */,
+				4FBC2B364BCC4CA9B6A0D751 /* MinSizeRel */,
+				D4514813FC654F289E77005A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		20A89940F0DD41E8B84285B1 /* Build configuration list for PBXNativeTarget "eLut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62608A721CC4D8D8151AE91 /* Debug */,
+				436FE83CD0DD41C9A9D63C24 /* Release */,
+				27AA0379D9FF4BC7A887EE5C /* MinSizeRel */,
+				D6F0E4528E27415FBDDFB5B1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3E0EB143515B427C8D0E725C /* Build configuration list for PBXProject "ilmbase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13085B7DAD514BF4A2B7A487 /* Debug */,
+				4EA75A6DC1224CAA9D627AC1 /* Release */,
+				1AB30C07E6B44B8995EE234F /* MinSizeRel */,
+				96D23C9979404E14A26209B1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5A28F8C37E5041A5BFCB9B51 /* Build configuration list for PBXNativeTarget "Iex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FC0DC41E5DF493589B16DE1 /* Debug */,
+				F1BAD4E484A54A3FA6AEEC28 /* Release */,
+				F2C1FD089C1146ED8EF229A2 /* MinSizeRel */,
+				82525B60CA354EFF8A3C3E62 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5E5C70C4423B4CF4BB97CDAF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53647FB530844E809C24115F /* Debug */,
+				5BA725ADF0EC45D5B51D2FB6 /* Release */,
+				4D6407728B7848D789C07EDB /* MinSizeRel */,
+				53BFC5B00F9947A08AA517A2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B9599F1805B4A688876824C /* Build configuration list for PBXNativeTarget "IlmThread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0B2FC6C13C94FE6B005135D /* Debug */,
+				AE7DAC0DCD1049F4BFBA61CB /* Release */,
+				B9249811BFB94A65BAD69C0A /* MinSizeRel */,
+				A2571B562FE74E2AA57F8AB1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8214424340374228AD1DF741 /* Build configuration list for PBXNativeTarget "Imath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE912B4459B40ECBBBBFBA9 /* Debug */,
+				E7B78D47353A4B02A73516CA /* Release */,
+				447A817C01634DEAB0A70D79 /* MinSizeRel */,
+				DBB8F8CCBE8E4DA684E70B4A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8B0CE5EC3AA14E17A4765EDE /* Build configuration list for PBXNativeTarget "IexMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6160034E18374F7C86E6602C /* Debug */,
+				AD52116905434472AE99AA8A /* Release */,
+				5A65159CF60D4791800E1F3B /* MinSizeRel */,
+				929A225D55F949F58FBF4FEF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AB1BACBBCA9847FB95551043 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B38A54A4AF242FBA7C2B99E /* Debug */,
+				FDDAC7DD74624DB48CA512EC /* Release */,
+				3898BD77DAC041D49DEBB190 /* MinSizeRel */,
+				B9E610E83D374932AA68A72B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC51582683C442ADB174C60C /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F7F83CB30743189985DCBF /* Debug */,
+				A6E705B0FD9E4E04A6228CA2 /* Release */,
+				E848F22FDE8F418A9373C33C /* MinSizeRel */,
+				1E734CEDC7444FC1AF0AABB4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E71DA9BEA68A43A6A4C5CD15 /* Build configuration list for PBXNativeTarget "toFloat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60AB086EDD1B4C678E37DA28 /* Debug */,
+				76E00487219848FD9307326A /* Release */,
+				24B38EA74F194050A1BDC5EE /* MinSizeRel */,
+				B2936602850A4AD897164C0C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F82293D95B024048B120C717 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42CE2B9357384EDAA8C0F479 /* Debug */,
+				13B3E2D2FDBB4E81B5867D57 /* Release */,
+				4BFE325829AC4DB2972B3803 /* MinSizeRel */,
+				95EC386E074C49A2B9CCBFBB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FA96231CEE554CFC92B8E35D /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A433112F0454C53B354C7B9 /* Debug */,
+				242C976E38E64C3CA503CA37 /* Release */,
+				00956139C9A740BE97E2E117 /* MinSizeRel */,
+				6841291A8A324870A24217E5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6FA36F574644109B65967DF /* Project object */;
+}
