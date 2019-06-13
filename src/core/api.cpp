@@ -1765,7 +1765,25 @@ void pbrtRenderConfig(ParamSet &renderSet){
         renderOptions->FilmParams = renderSet;
         renderOptions->CameraParams = renderSet;
         
+        
     }
 }
-
-}  // namespace pbrt
+    
+    //Return Instances Map From Render options
+    std::map<std::string, std::vector<std::shared_ptr<Primitive>>> pbrtGetInstances(){
+        return renderOptions->instances;
+    }
+    std::vector<std::shared_ptr<Primitive>> pbrtGetInstance(const std::string &name){
+        return renderOptions->instances[name];
+    }
+    
+    std::map<std::string, std::shared_ptr<Medium>> getMediums(){
+        return renderOptions->namedMedia;
+    }
+    std::vector<std::shared_ptr<Light>> getLights(){
+        return renderOptions->lights;
+    }
+    
+    
+    
+} // namespace pbrt

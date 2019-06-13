@@ -92,6 +92,12 @@ void pbrtParseFile(std::string filename);
 void pbrtParseString(std::string str);
     
 void pbrtRenderConfig(ParamSet &renderSet);
+    
+std::map<std::string, std::vector<std::shared_ptr<Primitive>>> pbrtGetInstances();
+std::vector<std::shared_ptr<Primitive>> pbrtGetInstance(const std::string &name);
+std::map<std::string, std::shared_ptr<Medium>> getMediums();
+std::vector<std::shared_ptr<Light>> getLights();
+
 
 }  // namespace pbrt
 
