@@ -1080,7 +1080,10 @@ static void parse(std::unique_ptr<Tokenizer> t) {
             if (tok == "WorldBegin")
                 pbrtWorldBegin();
             else if (tok == "WorldEnd")
-                pbrtWorldEnd();
+                if(!pbrtIsRenderExplicit()){pbrtWorldEnd();}
+                else{
+                    Warning("Render Pipeline Must Be Explicitly Called By API\nCall pbrtWorldEnd();");
+                }
             else
                 syntaxError(tok);
             break;

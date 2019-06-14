@@ -92,6 +92,7 @@ void pbrtParseFile(std::string filename);
 void pbrtParseString(std::string str);
     
 void pbrtRenderConfig(ParamSet &renderSet);
+    bool pbrtIsRenderExplicit();
     
 std::map<std::string, std::vector<std::shared_ptr<Primitive>>> pbrtGetInstances();
 std::vector<std::shared_ptr<Primitive>> pbrtGetInstance(const std::string &name);

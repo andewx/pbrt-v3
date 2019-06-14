@@ -183,6 +183,7 @@ struct RenderOptions {
     std::vector<std::shared_ptr<Primitive>> *currentInstance = nullptr;
     bool haveScatteringMedia = false;
     bool userOptions = false;
+    bool renderExplicit = false;  //Define User Render Pipeline
 };
 
 // MaterialInstance represents both an instance of a material as well as
@@ -1784,6 +1785,10 @@ void pbrtRenderConfig(ParamSet &renderSet){
         return renderOptions->lights;
     }
     
+    
+    bool pbrtIsRenderExplicit(){
+        return renderOptions->renderExplicit;
+    }
     
     
 } // namespace pbrt
